@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20vh;
+    gap: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.myServices {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.18538em;
+    color: #5C575C;
+    text-align: center;
+}
+
+.services {
+
+    display: flex;
+    flex-direction: row;
+  gap:7vw
+}
+
+.design ,.development,.maintenance{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    
+
+}
+
+
+.icon,
+.name {
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.name{
+    font-weight:550;
+    font-size: 3vh;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+}
+
+.description {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 3vw 3vw 3vw; 
+  
+  
+}
+
+img:first-child,img:nth-child(2){
+    width:5vw;
+    height:10vh;
+    opacity: 0.8;
+}
+
+.thirdimg{
+    width:10vw;
+    height:10vh;
+    opacity: 0.8;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.7vh;
+  
+}
+  
