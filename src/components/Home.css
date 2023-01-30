@@ -1,3 +1,5 @@
+
+
 .home {
     display: flex;
     gap: 3rem;
@@ -105,4 +107,85 @@ img {
     border-color: transparent transparent #dbdee1 transparent;
     opacity: 0.8;
     z-index: -1;
+}
+
+
+@media screen and (max-width:1700px){
+
+    .parag{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .title {
+            height:10%;
+         }
+    
+    .home{
+            justify-content: flex-start;
+            padding-left:40px;
+            gap:1rem;
+            margin-right:0;
+            padding-right: 5px;
+        }
+
+    .triangle{ border-width: 0 0 600px 800px;
+
+    }
+    .description{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .state{font-size: 30px;}
+    
+    .hello{
+        height: 10%;
+    }
+
+}
+
+@media screen and (max-width:1002px){
+.title{
+   
+   padding-top: 0;
+   margin: 0;
+   height: 20%;
+}
+.description{
+    padding-top: 0;   
+}
+.home{
+    gap:0;
+}
+.parag{
+    margin-right: 0;
+}
+}
+
+@media screen and (max-width:1000px){
+    .triangle{
+        border-width: 0 0 500px 600px
+
+    }
+    img {
+        margin-right: 0;
+        width: 400px;
+    }
+    
+}
+
+@media only screen and (max-width:795px){
+ .home{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+ }
+.description{
+    align-items: center;
+
+}
+
 }
