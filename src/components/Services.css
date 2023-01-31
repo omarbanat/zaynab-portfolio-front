@@ -1,4 +1,4 @@
-.container {
+.services-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +21,14 @@
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 65px;
     display: flex;
     align-items: center;
     letter-spacing: 0.18538em;
     color: #5C575C;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .services {
@@ -47,8 +47,8 @@
 }
 
 
-.icon,
-.name {
+.service-icon,
+.service-name {
     text-align: center;
     font-family: 'Nunito';
     font-style: normal;
@@ -57,14 +57,14 @@
     line-height: 30px;
 }
 
-.name{
+.service-name{
     font-weight:550;
     font-size: 3vh;
     letter-spacing: 0.15em;
     text-transform: capitalize;
 }
 
-.description {
+.service-description {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -87,7 +87,28 @@
     opacity: 0.8;
 }
 
-/* .my{
-    color:#5C575C
-} */
+@media screen and (max-width:1155px) {
 
+    .services-container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+}
+
+.services{
+    gap: 4vw;
+}
+}
+
+@media screen and (max-width:800px){
+
+    .services{
+        flex-direction: column;
+       padding:  0 5rem 5rem 5rem;
+       gap:0.8rem;
+    }
+
+    .myServices{
+        margin-top: 4rem;
+    }
+}

@@ -193,7 +193,19 @@
   }
 }
 
-@media only screen and (max-width:800px){
+
+/* @media screen and (max-width:859px){
+
+    .triangle{
+        border-width: 0 0 510px 540px;
+            top: 170px;
+
+    }
+} */
+
+
+
+@media only screen and (max-width:794px){
  .home{
     display: flex;
     flex-direction: column-reverse;

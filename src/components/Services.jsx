@@ -7,36 +7,36 @@ import Maintenance from "../images/maintenance.png";
 import Development from "../images/development.png";
 const Services = () => {
   return (
-    <div className="container">
+    <div className="services-container">
       <div className="myServices">My Services</div>
 
       <div className="services">
         <div className="design">
-          <div className="icon">
+          <div className="service-icon">
             <img className="designimage"src={Design} alt="design icon" />
           </div>
-          <div className="name">DESIGN</div>
-          <div className="description">
+          <div className="service-name">DESIGN</div>
+          <div className="service-description">
             I can design the site based on your needs and suggestions, I can
             also design the site from scratch and consult you during the job
           </div>
         </div>
         <div className="development">
-          <div className="icon">
+          <div className="service-icon">
             <img className="developmentimage" src={Development} alt="development" />
           </div>
-          <div className="name">DEVELOPMENT</div>
-          <div className="description">
+          <div className="service-name">DEVELOPMENT</div>
+          <div className="service-description">
             I can design the site based on your needs and suggestions, I can
             also design the site from scratch and consult you during the job
           </div>
         </div>
         <div className="maintenance">
-          <div className="icon">
+          <div className="service-icon">
             <img className="thirdimg" src={Maintenance} alt="Maintenance" />
           </div>
-          <div className="name">MAINTENANCE</div>
-          <div className="description">
+          <div className="service-name">MAINTENANCE</div>
+          <div className="service-description">
             I can design the site based on your needs and suggestions, I can
             also design the site from scratch and consult you during the job
           </div>
