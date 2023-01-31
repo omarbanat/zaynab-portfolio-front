@@ -1,7 +1,16 @@
 import './App.css';
+import React from 'react';
+import Services from './components/Services';
+
+
 
 function App() {
-  return <div>Hello World!</div>;
+  return( 
+
+    <div>
+    <Services/>
+    </div>
+  )
 }
 
 export default App;
