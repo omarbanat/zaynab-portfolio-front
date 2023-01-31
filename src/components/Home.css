@@ -6,15 +6,17 @@
     justify-content: center;
     gap: 8rem;
     align-content: center;
+    margin: 2rem;
 }
 
-img {
+.home-profileimage{
     border-radius: 1rem;
     margin-top: 2rem;
     margin-right: 3rem;
+   
 }
 
-.description {
+.home-description {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
@@ -23,7 +25,7 @@ img {
     padding-top: 7rem;
 }
 
-.title {
+.home-title {
     display: flex;
     gap: 0.8rem
 }
@@ -32,13 +34,12 @@ img {
     background: #8A5284;
     border-radius: 18px;
     color: white;
-    font-size: 20px;
-    padding: 10px 10px;
+    font-size: 1.4rem;
     margin: 20px;
     cursor: pointer;
     border: none;
-    width: 172.65px;
-    height: 53.97px;
+    width: 10rem;
+    height: 3rem;
     opacity: 0.9;
    
 }
@@ -47,11 +48,11 @@ img {
     box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     opacity:1;
 }
-.hello {
+.home-hello {
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-size: 28px;
-    height: 2%;
+    font-size: 2rem;
+    height: 10%;
 
 }
 
@@ -59,17 +60,17 @@ img {
     color: black;
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size:3rem;
     text-transform: capitalize;
 
 }
 
-.name {
+.home-name {
     color: #9E9E9E;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3rem;
     text-transform: capitalize;
 }
 
@@ -77,21 +78,21 @@ img {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
    
 }
 
-.title {
+.home-title {
     height: 20%;
 }
 
 .parag {
-    margin-right: 100px;
-    padding-right: 150px;
+    margin-right: 5rem;
+    padding-right:5.5rem;
 }
 
 
@@ -105,4 +106,113 @@ img {
     border-color: transparent transparent #dbdee1 transparent;
     opacity: 0.8;
     z-index: -1;
+}
+
+@media screen and (max-width:1757px){
+.home{
+    gap:1rem;
+}
+}
+    
+
+@media screen and (max-width:1700px){
+
+    .home{
+            padding-left:10rem;
+            margin-right:0;
+            padding-right: 5px;
+        }
+
+    .triangle{
+             border-width: 0 0 600px 800px;
+
+        }
+
+}
+
+@media screen and (max-width:1300px){
+    .home{
+        padding-left:2rem ;
+    }
+}
+
+@media screen  and (max-width:1170px){
+    .home-profileimage{
+        width: 25rem;
+    }
+    .home-name,.state{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:1002px){
+.home-title{
+
+   padding-top: 0;
+   margin: 0;
+   height: 20%;
+}
+.home-description{
+    padding-top: 0;   
+}
+.home{
+    gap:0;
+}
+.parag{
+    margin-right: 0;
+}
+}
+
+@media screen and (max-width:919px){
+    .home-profileimage{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .triangle{
+       
+            border-width: 0 0 435px 545px;
+            top: 150px;
+        }
+
+    
+    .home-profileimage {
+        margin-right: 0;
+        width:20rem;
+    }
+
+    .home{
+        align-items: center;
+    }
+  .home-description{
+    margin-top:3rem;
+  }
+}
+
+@media only screen and (max-width:800px){
+ .home{
+    display: flex;
+    flex-direction: column-reverse;
+    
+
+ }
+.home-description{
+    align-items: center;
+
+}
+
+.parag{
+    width:100%;
+        margin-right: 0;
+        padding-right:0;
+        padding-left:0;
+}
+     .home-name,.state{
+            font-size: 2rem;
+            
+        }
 }

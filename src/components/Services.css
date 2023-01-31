@@ -75,7 +75,7 @@
   
 }
 
-img:first-child,img:nth-child(2){
+.designimage, .developmentimage{
     width:5vw;
     height:10vh;
     opacity: 0.8;

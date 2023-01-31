@@ -13,7 +13,7 @@ const Services = () => {
       <div className="services">
         <div className="design">
           <div className="icon">
-            <img src={Design} alt="design icon" />
+            <img className="designimage"src={Design} alt="design icon" />
           </div>
           <div className="name">DESIGN</div>
           <div className="description">
@@ -23,7 +23,7 @@ const Services = () => {
         </div>
         <div className="development">
           <div className="icon">
-            <img src={Development} alt="development" />
+            <img className="developmentimage" src={Development} alt="development" />
           </div>
           <div className="name">DEVELOPMENT</div>
           <div className="description">
