@@ -4,10 +4,17 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-top: 20vh;
     gap: 10vh;
     padding-left: 10vw;
     padding-right: 10vw;
+    background-image: url('../images/dottedimage.png');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top; 
+  background-size: 30%;
+
+   
+
 }
 
 .myServices {
@@ -21,6 +28,7 @@
     letter-spacing: 0.18538em;
     color: #5C575C;
     text-align: center;
+    margin-top: 20vh;
 }
 
 .services {
@@ -60,7 +68,7 @@
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.1rem;
     line-height: 19px;
     padding: 0 3vw 3vw 3vw; 
   
@@ -79,13 +87,3 @@ img:first-child,img:nth-child(2){
     opacity: 0.8;
 }
 
-.dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0.7vh;
-  
-}
-  

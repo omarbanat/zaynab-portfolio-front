@@ -42,10 +42,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="square">
-        <span class="dot"></span>
-        
-      </div>
+    
     </div>
   );
 };
