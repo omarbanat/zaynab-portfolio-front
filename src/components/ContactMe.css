@@ -1,0 +1,30 @@
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.contact-name {
+    font-weight: bold;
+    font-size: 80px;
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+}
+.contactme{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: yellow;
+    font-size: 40px;
+}
+.left-buttom {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
