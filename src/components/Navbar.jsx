@@ -2,13 +2,29 @@ import React from "react";
 import "./Navbar.css"
 import {Link} from "react-router-dom";
 import SocialFollow from "./SocialFollow"
-import "./SocialFollow.css"
+import "./SocialFollow.css";
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 const Navbar =() =>{
 
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
+
+
     return(
-    <nav className="nav">
-    <p className="site-title"> ZAYNAB ABD AL NABI</p>
+
+    <nav className="navigation">
+
+    <p className="site-title"> ZAYNAB <span>ABD AL NABI</span></p>
+
+    <button className="hamburger"  onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}><FaBars/></button>
+        
+    <div
+        className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }>
     <ul>
         <li>
             <Link to="/"><strong>Home</strong> </Link>
@@ -29,7 +45,8 @@ const Navbar =() =>{
             <Link to="/blogs">BLogs</Link>
         </li>
     </ul>
-    <SocialFollow />
+    </div>
+   <div className="socailfollow"><SocialFollow /></div> 
   </nav>
 )
 }
