@@ -1,0 +1,107 @@
+
+
+
+
+
+*{
+    
+   
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  /* background-color: black; */
+ 
+} 
+
+
+
+
+.wholeblogssection{
+    
+margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 706px;
+    width: 1280px;
+    background-color: white;
+    align-self: center;
+    align-self: center;
+}
+
+.blogscenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* space around or something similar to center and work with the width and padding*/
+    /* background-color: #8A5284; */
+}
+
+.showMoreBlogButton{
+    border: none; 
+    /* border-radius: 15px 50px;  */
+    border-radius: 100px;
+    background: #8A5284;
+    width: 127px;
+    height: 50px;
+    color: white;
+ }
+
+ .tripletblogs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;/*I may delete it later*/
+    height: 400px;
+    width: 300px;
+    /* background-color: blue; */
+ }
+
+
+.soura{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blogstitlediv{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 5%; */
+}
+
+.blogsbuttondiv{
+    /* background-color:gray ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogstitleheader{
+    background-color: white;
+    
+    color:#5C575C;
+    text-align: start;
+}
+
+.blogsdateheader{
+    background-color: white;
+    text-align: start;
+    color:#5C575C;
+}
+
+.Blogsmaintitleheader{
+    background-color: white;
+    color:#5C575C;
+  
+}
+
+/* @media only screen and (max-width:800px){
+    
+} */
+
+
+
+
+
+
+
