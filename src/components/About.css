@@ -18,10 +18,13 @@
     background: linear-gradient(90.18deg, #684464 30.43%, #1D1D1D 89.19%, #1D1D1D 89.19%);
     display: flex;
     flex-direction: column;
-    padding-left:3rem;
+    padding-left:4rem;
     padding-right: 15rem;
     color:white;
     align-content:center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap:1rem;
     
 }
 
