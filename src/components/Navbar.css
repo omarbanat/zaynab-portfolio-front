@@ -64,6 +64,14 @@ border-bottom-left-radius: 10px;
     
    
   }
+  
+  @media screen and (max-width:1166px) {
+
+    .site-title span{
+      display: none;
+    }
+    
+  }
 
   @media screen and (max-width: 940px){
     .socailfollow{
