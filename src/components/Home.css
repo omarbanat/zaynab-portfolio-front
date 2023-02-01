@@ -164,6 +164,14 @@
 .parag{
     margin-right: 0;
 }
+
+.triangle{
+       
+    border-width: 0 0 600px 660px;
+    top: 150px;
+   }
+
+
 }
 
 @media screen and (max-width:919px){
@@ -205,11 +213,11 @@
 
 
 
-@media only screen and (max-width:794px){
+@media only screen and (max-width:867px){
  .home{
     display: flex;
     flex-direction: column-reverse;
-    
+    margin-left: 0;
 
  }
 .home-description{
@@ -223,8 +231,18 @@
         padding-right:0;
         padding-left:0;
 }
-     .home-name,.state{
-            font-size: 2rem;
+
+
+.home-name,.state{
+          font-size: 7vw;
             
         }
+
+ .triangle{
+       
+         border-width: 0 0 440px 650px;
+         top: 150px;
+        }
+
+     
 }
