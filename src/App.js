@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import {Route,Routes} from 'react-router-dom';
 import Home from './components/Home';
-
+import Footer from './components/Footer';
 
 function App() {
  return(
@@ -13,6 +13,7 @@ function App() {
       <Route path="/" element={<Home></Home>}></Route>
     </Routes>
     
+    <Footer/>
   </div>
  )
   
