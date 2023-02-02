@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import About from './components/About';
 import React from 'react';
+import Footer from './components/Footer';
 
 function App() {
  return(
@@ -18,9 +19,11 @@ function App() {
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/about" element={<About></About>}></Route>
     </Routes>
+    
   
     <Services/>
     <Skills/>
+    <Footer/>
   </div>
  )
   
