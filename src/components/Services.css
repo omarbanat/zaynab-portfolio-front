@@ -7,11 +7,11 @@
     gap: 10vh;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-image: url('../images/dottedimage.png');
+    background-image: url('../images/backgroundimages.png');
     background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left top; 
-  background-size: 30%;
+  /* background-attachment: fixed; */
+  background-position:left top; 
+  background-size: 20%;
 
    
 
@@ -48,12 +48,19 @@
 
 
 .service-icon,
+.service-name{
+    text-align: center;
+    font-size: 5rem;
+    color: #5C575C;
+
+}
+
+
 .service-name {
     text-align: center;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
     line-height: 30px;
 }
 
@@ -75,17 +82,6 @@
   
 }
 
-.designimage, .developmentimage{
-    width:5vw;
-    height:10vh;
-    opacity: 0.8;
-}
-
-.thirdimg{
-    width:10vw;
-    height:10vh;
-    opacity: 0.8;
-}
 
 @media screen and (max-width:1155px) {
 
@@ -110,5 +106,9 @@
 
     .myServices{
         margin-top: 4rem;
+    }
+
+    .services-container{
+    background-image: none;
     }
 }
