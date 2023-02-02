@@ -13,26 +13,26 @@ import {
 const ContactMe = () => {
     return (
         <div className="contact-me">
-            <div className="left">
-                <div className="contact-name">Zaynab Abdl<br /> Nabi</div>
+            <div class="left">
+                <div className="contact-name">Zaynab Abd El<br /> Nabi</div>
                 <div className="social-icon">
                     <div className="facebook-icon">
-                        <FontAwesomeIcon icon={faFacebook} size="3x" color='grey' />
+                        <FontAwesomeIcon icon={faFacebook} color='grey' />
                     </div>
-                    <div lassName="LinkedIn-icon">
-                        <FontAwesomeIcon icon={faLinkedinIn} size="3x" color='grey' />
+                    <div class="LinkedIn-icon">
+                        <FontAwesomeIcon icon={faLinkedinIn} color='grey' />
                     </div>
-                    <div lassName="twitter-icon">
-                        <FontAwesomeIcon icon={faTwitter} size="3x" color='grey' />
+                    <div class="twitter-icon">
+                        <FontAwesomeIcon icon={faTwitter} color='grey' />
                     </div>
-                    <div lassName="instagram-icon">
-                        <FontAwesomeIcon icon={faInstagram} size="3x" color='grey' />
+                    <div class="instagram-icon">
+                        <FontAwesomeIcon icon={faInstagram} color='grey' />
                     </div>
                 </div>
                 <div className="left-buttom">
                     <div className="personal-contact">
                         <div className="personal-contact">My personal contact </div>
-                        <div className="phone-number">+961 81 286</div>
+                        <div className="phone-number">+961 81 286 345</div>
                     </div>
                     <div className="contact-email">
                         <div className="hello-message">Say hello, on email</div>
@@ -40,16 +40,22 @@ const ContactMe = () => {
                     </div>
                 </div>
             </div>
-            <div className="right">
-                <div className="contact-title">Contact<br />Me.</div>
-                <div className="questions-part">
-                    <div className="name-question">What is your name ?*</div>
-                    <div className="email-question">What is your email?*</div>
-                    <div className="message">Write your message here*</div>
-                    <div className="sendbtn"> <button>Send</button></div>
-                </div>
+
+
+
+
+            <div className="right-container">
+                <div className="midlle-content">Contact<br /> me</div>
+
+                <form class="right">
+                    <input type="text" id="name-question" name="text" placeholder="What is your name ?"/>
+                    <input type="email" id="email-question" name="text" placeholder="What is your Email ?" />
+                    <textarea type="text" id="writing-message" name="text" placeholder="Write a message"/>
+                    <button class="send-btn" type="submit"><div class="text-btn" >Send</div></button>
+                </form>
 
             </div>
+
         </div>
     )
 }
