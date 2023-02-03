@@ -1,5 +1,5 @@
 .about-btn{
-    background: #FFFFFF;
+    background: #FFFFFF ;
     border-radius: 13.9355px;
     color: balck;
     font-size: 20px;
@@ -15,7 +15,7 @@
 }
 
 .aboutme{
-    background: linear-gradient(90.18deg, #684464 30.43%, #1D1D1D 89.19%, #1D1D1D 89.19%);
+    background: linear-gradient(90.18deg, #684464 30.43%, #1D1D1D 89.19%, #1D1D1D 89.19%) !important;
     display: flex;
     flex-direction: column;
     padding-left:4rem;
