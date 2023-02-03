@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
+import AdminLogin from './components/AdminLogin/AdminLogin';
 
 function App() {
  return(
@@ -24,6 +25,7 @@ function App() {
     <Services/>
     <Skills/>
     <Footer/>
+    <AdminLogin/>
   </div>
  )
   
