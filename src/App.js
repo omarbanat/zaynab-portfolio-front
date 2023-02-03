@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import {Route,Routes} from 'react-router-dom';
+// import {Route,Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Services from './components/Services';
 import Skills from './components/Skills';
@@ -15,13 +15,8 @@ function App() {
    
   
     <Navbar/>
-   
-    <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      <Route path="/about" element={<About></About>}></Route>
-    </Routes>
-    
-  
+    <Home/>
+    <About/>
     <Services/>
     <Skills/>
     <Footer/>
@@ -32,3 +27,9 @@ function App() {
 }
 
 export default App;
+
+
+ /* <Routes>
+      <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/about" element={<About></About>}></Route>
+    </Routes> */

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Profile from '../images/zaynab-profile.png';
-import About from "./About";
+
 
 
 const Home = () => {
@@ -25,7 +25,6 @@ const Home = () => {
                 <div className="triangle"></div>
             </div>
             
-            <About />
         </div>
 
     )
