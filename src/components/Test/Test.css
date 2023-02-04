@@ -1,0 +1,152 @@
+/* .mydivouter{
+  position :relative;
+  width: 300px;
+  height: 300px;
+}
+.mybuttonoverlap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  /* display: none; */
+
+/* .mydivouter:hover .mybuttonoverlap{ 
+  display:block;
+  border: none;
+  opacity:0;
+  padding: 9px;
+  margin:0 ;
+  background: #191018;
+border-radius: 11.8868px;
+
+font-weight: 400;
+font-size: 13.2075px;
+line-height: 18px;
+color: #FFFFFF;}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+} */
+
+/* .button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}  */
+  /* Primary button */
+
+
+
+
+
+/* Join Waitlist
+
+width: 62px;
+height: 18px;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 13.2075px;
+line-height: 18px;
+/* identical to box height */
+
+/* color: #FFFFFF;
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+flex-grow: 0; */
+
+.mydivouter{
+  position :relative;
+  width: 300px;
+  height: 300px;
+}
+.mybuttonoverlap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: none;
+}
+.mydivouter:hover .mybuttonoverlap{ 
+  display: inline-block;
+  padding: 3px;
+  margin:0 ;
+}
+.mybuttonoverlap {
+  border-radius: 4px;
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.mybuttonoverlap span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mybuttonoverlap span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.mybuttonoverlap:hover span {
+  padding-right: 25px;
+}
+
+.mybuttonoverlap:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* button:hover {
+  background-color: white;
+  color: #8A5284;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  */

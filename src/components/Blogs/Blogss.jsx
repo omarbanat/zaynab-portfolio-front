@@ -20,19 +20,28 @@ function Blogss() {
         
         <div className='blogscenter'>
             <div className='tripletblogs'>
-                <img className="soura" src={blogOne} alt="firstimage"/>
+                <div class="mydivouter">	
+                  <img className="BlogImagetriplet" src={blogOne} alt="firstimage"/>
+                  <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>
  
             </div>
             <div className='tripletblogs'>
-                <img className="soura" src={blogTwo} alt="firstimage"/>
+                <div class="mydivouter">	
+                <img className="BlogImagetriplet" src={blogTwo} alt="firstimage"/>
+                <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>
 
             </div>
             <div className='tripletblogs'>
-                <img className="soura" src={blogThree} alt="firstimage"/>
+                <div class="mydivouter">
+                <img className="BlogImagetriplet" src={blogThree} alt="firstimage"/>
+                <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>
             </div>
