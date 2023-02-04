@@ -8,7 +8,7 @@ import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
 import AdminLogin from './components/AdminLogin/AdminLogin';
-
+import Experiences from './components/Experiences'
 function App() {
  return(
   <div className='App'>
@@ -18,6 +18,7 @@ function App() {
     <Home/>
     <About/>
     <Services/>
+    <Experiences/>
     <Skills/>
     <Footer/>
     <AdminLogin/>

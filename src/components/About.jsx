@@ -12,8 +12,8 @@ const About = () =>{
               to="skills"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-50}
+              duration={2000}
             ><button className="about-btn" >My Skills</button></Link></div> 
         </div>
         {/* <Routes>
