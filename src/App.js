@@ -7,27 +7,25 @@ import Skills from './components/Skills';
 import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
+import Experiences from './components/Experiences';
 
 function App() {
- return(
-  <div className='App'>
-   
-  
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Services/>
-    <Skills/>
-    <Footer/>
-  </div>
- )
-  
+  return (
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Experiences />
+      <Skills />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
 
-
- /* <Routes>
+/* <Routes>
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/about" element={<About></About>}></Route>
     </Routes> */
