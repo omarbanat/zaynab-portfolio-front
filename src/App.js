@@ -8,17 +8,14 @@ import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
 
+
+
 function App() {
  return(
   <div className='App'>
    
-  
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Services/>
-    <Skills/>
-    <Footer/>
+   
+   
   </div>
  )
   
