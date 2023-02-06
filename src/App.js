@@ -7,18 +7,13 @@ import Skills from './components/Skills';
 import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
+import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage'
 
 function App() {
  return(
   <div className='App'>
-   
+   <Oneprojectpage/>
   
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Services/>
-    <Skills/>
-    <Footer/>
   </div>
  )
   
