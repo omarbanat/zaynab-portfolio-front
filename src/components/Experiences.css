@@ -6,6 +6,19 @@
   margin-bottom: 4em;
 }
 
+.experience-section h1{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.18538em;
+  color: #5C575C;
+  text-align: center;
+}
+
 .experience-container {
   width: 75vw;
   margin: 0.5em 0;

@@ -40,6 +40,7 @@
     width: 60%;
     height: 2em;
     text-align: center;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156) ;
     
 }
 
@@ -96,7 +97,6 @@ input {
     outline: none;
     border: none;
     padding: 1rem;
-    text-align: center;
     color: white;
     background-color: #91708dc8;
     border: 1px solid #5b4658c8;
@@ -105,6 +105,21 @@ input {
     height: 4rem;
 
 }
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+
 input:focus{
     outline-color: rgb(156,156,156);
 
