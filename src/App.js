@@ -20,7 +20,7 @@ function App() {
   // //Storing the token in a memory using usestate
   // const [token, setToken] = useState();
 
-  
+
 
   // //Add a conditional statement to display Login if the token is falsy
   // if (!token) {
@@ -53,7 +53,7 @@ function App() {
       <Experiences />
       <Skills />
       <Footer />
-     
+
 
 
       {/* <BrowserRouter>
@@ -65,7 +65,7 @@ function App() {
     </BrowserRouter> */}
 
       <Routes>
-        <Route path="/login" element={<AdminLogin/>}></Route>
+        <Route path="/login" element={<AdminLogin />}></Route>
       </Routes>
     </div>
   )
@@ -74,8 +74,3 @@ function App() {
 
 export default App;
 
-
-/* <Routes>
-     <Route path="/" element={<Home></Home>}></Route>
-     <Route path="/about" element={<About></About>}></Route>
-   </Routes> */

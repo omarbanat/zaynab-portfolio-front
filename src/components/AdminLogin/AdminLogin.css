@@ -37,7 +37,7 @@
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
-    width: 60%;
+    width: 40%;
     height: 2em;
     text-align: center;
     box-shadow: 0 0.188em 1.550em rgb(156,156,156) ;
@@ -107,11 +107,12 @@ input {
 }
 
 .errmsg {
-    background-color: lightpink;
-    color: firebrick;
+    background-color: rgb(162, 161, 161);
+    color:  #281026c8;
     font-weight: bold;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156) ;
 }
 
 .offscreen {
