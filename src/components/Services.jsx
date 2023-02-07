@@ -1,14 +1,47 @@
-import React from "react";
-import "./Services.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {faHtml5} from "@fortawesome/free-brands-svg-icons";
-// import Design from "../images/design.png";
-// import Maintenance from "../images/maintenance.png";
-// import Development from "../images/development.png";
-import { MdDesignServices } from "react-icons/md";
-import { FaWrench } from "react-icons/fa";
-import { AiOutlineLaptop } from "react-icons/ai";
+import React from 'react';
+import './Services.css';
+import { MdDesignServices } from 'react-icons/md';
+import { FaWrench } from 'react-icons/fa';
+import { AiOutlineLaptop } from 'react-icons/ai';
+import axios from 'axios';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
+
 const Services = () => {
+  const API_URL = process.env.REACT_APP_API_URL;
+  const [serviceDescription, setserviceDescription] = useState();
+
+  const fetchServiceInformation = async () => {
+    await axios
+      .get(`${API_URL}/infos/getAllInformation`)
+      .then((response) => setserviceDescription(response.data.data));
+    console.log('product', serviceDescription);
+  };
+
+  useEffect(() => {
+    fetchServiceInformation();
+  });
+
+  const designData =
+    serviceDescription &&
+    serviceDescription.find((data) => data.title === 'Design')
+      ? serviceDescription.find((data) => data.title === 'Design')
+      : null;
+
+  const developmentData =
+    serviceDescription &&
+    serviceDescription.find((data) => data.title === 'Development')
+      ? serviceDescription.find((data) => data.title === 'Development')
+      : null;
+
+  const maintenanceData =
+    serviceDescription &&
+    serviceDescription.find((data) => data.title === 'Maintenance')
+      ? serviceDescription.find((data) => data.title === 'Maintenance')
+      : null;
+
+
   return (
     <div className="services-container" id="services">
       <div className="myServices">My Services</div>
@@ -19,10 +52,9 @@ const Services = () => {
             {/* <img className="designimage"src={Design} alt="design icon" /> */}
             <MdDesignServices />
           </div>
-          <div className="service-name">DESIGN</div>
+          <div className="service-name">{designData?.title}</div>
           <div className="service-description">
-            I can design the site based on your needs and suggestions, I can
-            also design the site from scratch and consult you during the job
+            {designData?.fullDescription}
           </div>
         </div>
         <div className="development">
@@ -30,10 +62,9 @@ const Services = () => {
             {/* <img className="developmentimage" src={Development} alt="development" /> */}
             <FaWrench />
           </div>
-          <div className="service-name">DEVELOPMENT</div>
+          <div className="service-name">{developmentData?.title}</div>
           <div className="service-description">
-            I can design the site based on your needs and suggestions, I can
-            also design the site from scratch and consult you during the job
+           {developmentData?.fullDescription}
           </div>
         </div>
         <div className="maintenance">
@@ -41,10 +72,9 @@ const Services = () => {
             {/* <img className="maintenance-img" src={Maintenance} alt="Maintenance" /> */}
             <AiOutlineLaptop />
           </div>
-          <div className="service-name">MAINTENANCE</div>
+          <div className="service-name">{maintenanceData?.title}</div>
           <div className="service-description">
-            I can design the site based on your needs and suggestions, I can
-            also design the site from scratch and consult you during the job
+           {maintenanceData?.fullDescription}
           </div>
         </div>
       </div>
