@@ -138,17 +138,20 @@
 
 @media screen  and (max-width:1170px){
     .home-profileimage{
-        width: 25rem;
+        width: 30rem;
     }
     .home-name,.state{
         font-size: 2.5rem;
     }
-
+    .parag {
+        margin-right: 0;
+        padding-right:0;
+    }
 }
 
 
 
-@media screen and (max-width:1002px){
+@media screen and (max-width:1000px){
 .home-title{
 
    padding-top: 0;
@@ -160,10 +163,9 @@
 }
 .home{
     gap:0;
+    padding: 0 0 0 0;
 }
-.parag{
-    margin-right: 0;
-}
+
 
 .triangle{
        
@@ -244,5 +246,16 @@
          top: 150px;
         }
 
+
+
      
+}
+
+@media screen and (max-width:768px) {
+    
+    .triangle{
+       
+        border-width: 0 0 340px 650px;
+        top: 150px;
+       }
 }
