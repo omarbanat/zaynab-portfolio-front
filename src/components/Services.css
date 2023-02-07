@@ -1,4 +1,4 @@
-.services-container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,79 +7,65 @@
     gap: 10vh;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-image: url('../images/backgroundimages.png');
+    background-image: url('../images/dottedimage.png');
     background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-position:left top; 
-  background-size: 20%;
-
-   
-
-}
+    background-attachment: fixed;
+    background-position: left top; 
+    background-size: 30%;
+  }
 
 .myServices {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 65px;
     display: flex;
     align-items: center;
     letter-spacing: 0.18538em;
     color: #5C575C;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .services {
-
     display: flex;
     flex-direction: row;
-  gap:7vw
+    gap:7vw
+
 }
 
 .design ,.development,.maintenance{
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    
-
 }
 
 
-.service-icon,
-.service-name{
-    text-align: center;
-    font-size: 5rem;
-    color: #5C575C;
-
-}
-
-
-.service-name {
+.icon,
+.name {
     text-align: center;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
+    font-size: 22px;
     line-height: 30px;
 }
 
-.service-name{
+.name{
     font-weight:550;
     font-size:2rem;
     letter-spacing: 0.15em;
     text-transform: capitalize;
 }
 
-.service-description {
+.description {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 19px;
     padding-bottom: 3rem;
-  
-  
 }
 
 

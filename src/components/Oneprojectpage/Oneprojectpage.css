@@ -1,0 +1,187 @@
+/* *{
+    border: 1px solid;
+} */
+
+.OneprojectPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 780px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.Tprjitle{
+    text-align: center;
+    font-size: 3rem;
+}
+.descriptionofaproject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 68px;
+   
+
+}
+.dateofprj{
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.ProjectNameprj{
+   
+    font-size: xxx-large;
+    font-weight: 400;
+}
+.paragprj{
+    margin-left: 3px;
+    width: 600px;
+}
+.ProjImj{
+    height: 500px;
+    width: 650px;
+}
+.paragraphofproject{
+    margin-left: 40px;
+    margin-bottom: 58px;
+}
+.showLINKPrjbtn{
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    margin-left: 13px;
+  
+}
+.gitLINKreactICON{
+    width: 47px;
+    height: 50px;
+   
+  
+}
+.buttonsPRJ{
+    margin-top: 80px;
+}
+
+
+
+
+
+@media only screen and (max-width:1300px){
+    .ProjImj{
+        height: 500px;
+        width: 500px;
+    }
+    .paragraphofproject{
+        width: 500px;
+
+    }
+    .paragprj{
+        width: 500px;
+    }
+    
+}
+@media only screen and (max-width:1090px){
+    .ProjImj{
+        height: 430px;
+        width: 430px;
+    }
+    .paragraphofproject{
+        width: 430px;
+
+    }
+    .paragprj{
+        width: 430px;
+    } 
+}
+@media only screen and (max-width:1000px){
+    .OneprojectPage{
+        display: flex;
+        flex-direction: column;
+        height: 1300px; } 
+        .ProjImj{
+            height: 500px;
+            width: 500px;
+        }
+        .paragraphofproject{
+            width: 500px;
+    
+        }
+        .paragprj{
+            width: 500px;
+        } 
+}
+
+
+
+
+
+@media only screen and (max-width:800px){
+    .OneprojectPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 1200px;
+        width: 80%;
+        margin: auto;
+        
+    }
+    .ProjImj{
+        width: 400px;
+        height: 400px;
+    }
+    .paragraphofproject{
+        width: 400px;
+
+    }
+    .paragprj{
+        width: 400px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:400px){
+    .OneprojectPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 1600px;
+        width: 80%;
+        margin: auto;
+        
+    }   
+    .ProjImj{
+        width: 330px;
+        height: 350px;
+        margin-left: 3px;
+    }
+    .paragraphofproject{
+        width: 350px;
+        height: 600px;
+
+    }
+    .paragprj{
+        width: 300px;
+        height: 400px;
+    }
+    .dateofprj{
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+}
+
+

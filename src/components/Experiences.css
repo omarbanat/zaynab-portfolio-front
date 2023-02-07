@@ -14,15 +14,15 @@
 .experience-section h1 {
   display: flex;
   justify-content: center;
-  margin: 1em;
-  margin-bottom: 2.5em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 4em;
+  letter-spacing: 0.2em;
+  color: #5c575c;
 }
 
 @media (max-width: 890px) {
-  .experience-section h1 {
-    margin-bottom: 1em;
-  }
-
   .experience-section {
     margin-bottom: 1em;
   }

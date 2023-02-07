@@ -83,9 +83,3 @@ const Services = () => {
 };
 
 export default Services;
-
-// MdDesignServices
-
-// HiWrenchScrewdriver
-
-// AiOutlineLaptop
