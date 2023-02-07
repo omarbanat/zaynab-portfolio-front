@@ -11,7 +11,7 @@ const About = () =>{
 
 
   const API_URL = process.env.REACT_APP_API_URL;
-  const [aboutDescription, setaboutDescription] = useState();
+  const [aboutDescription, setaboutDescription] = useState([]);
 
   const fetchAboutInformation = async () => {
     await axios
