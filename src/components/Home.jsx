@@ -20,10 +20,12 @@ const Home = () => {
 
   useEffect(() => {
     fetchInformation();
-  }, []);
+  });
 
   const homeData =
-    description && description.length > 0 ? description[0] : null;
+    description && description.find((data)=>data.type==='home')? description.find((data)=>data.type==='home'):null;
+
+    console.log(homeData)
 
   return (
     <div>
