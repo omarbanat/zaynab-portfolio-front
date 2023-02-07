@@ -15,8 +15,9 @@ const ContactMe = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        
-        emailjs.sendForm('service_y6emhp8' , 'template_qtj5p58' , e.target ,'vWYz7uagj0l_2VpAa' )
+        e.reset();
+        emailjs.sendForm('service_xze2u9a', 'template_se8t00r', e.target, 'user_mt5KiN05YOtBGhemev0Gj')
+
     }
 
     return (
@@ -54,12 +55,12 @@ const ContactMe = () => {
 
 
                 <div className="right-container">
-                    <div className="midlle-content">Contact<br /> me</div>
+                    <div className="midlle-content">Contact<br />me</div>
 
-                    <form class="right" onSubmit={sendEmail}>
-                        <input type="text" id="name-question" name="text" placeholder="What is your name ?" />
-                        <input type="email" id="email-question" name="text" placeholder="What is your Email ?" />
-                        <textarea type="text" id="writing-message" name="text" placeholder="Write a message" />
+                    <form class="right" id="myForm" onSubmit={sendEmail}>
+                        <input type="text" id="name-question" name="name" placeholder="What is your name ?" />
+                        <input type="email" id="email-question" name="email" placeholder="What is your Email ?" />
+                        <textarea type="text" id="writing-message" name="message" placeholder="Write a message" />
                         <button class="send-btn" type="submit"><div class="text-btn" >Send</div></button>
                     </form>
 
@@ -69,7 +70,7 @@ const ContactMe = () => {
 
                 <div className="title-query"> GET IN TOUCH</div>
 
-                <div className="form-query">
+                <div className="form-query" id="myForm">
                     <form className="form-query">
 
                         <div className="email-query">
