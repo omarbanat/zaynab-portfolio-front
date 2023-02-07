@@ -54,7 +54,7 @@
 
 .name{
     font-weight:550;
-    font-size: 3vh;
+    font-size:2rem;
     letter-spacing: 0.15em;
     text-transform: capitalize;
 }
@@ -65,7 +65,7 @@
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 19px;
-    padding: 0 3vw 3vw 3vw; 
+    padding-bottom: 3rem;
 }
 
 
