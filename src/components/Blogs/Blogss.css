@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
-    height: 800px;
+    height: 706px;
     width: 80%;
     background-color: white;
     align-self: center; 
@@ -213,7 +213,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: space-around;
-            height: 2000px;
+            height: 1500px;
             width: 80%;
             background-color: white;
             align-self: center;
@@ -249,7 +249,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: space-around;
-            height: 2000px;
+            height: 1500px;
             width: 80%;
             background-color: white;
             align-self: center;

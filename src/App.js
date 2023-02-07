@@ -8,6 +8,8 @@ import About from './components/About';
 import Projects from './components/Projects/Projectss';
 import Blogss from './components/Blogs/Blogss';
 import Footer from './components/Footer';
+import Blogss from './components/Blogs/Blogss';
+import Projects from './components/Projects/Projectss';
 import Experiences from './components/Experiences';
 import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage'
 import ContactMe from './components/ContactMe';
