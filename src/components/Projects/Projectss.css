@@ -1,0 +1,326 @@
+
+
+.wholeprojectssection{
+    width: 80%;
+    /* text-align: center; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: space-around;
+    height: 1100px;
+
+    background-color: white;
+    /* align-self: center; */
+    padding: 2px;
+}
+.projectstitlediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.Projectsmaintitleheader{
+    background-color: white;
+    color:#5C575C;
+  
+}
+.ProjectsMainCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+.projectscenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* space around or something similar to center and work with the width and padding*/
+    /* background-color: #8A5284; */
+    width: 100%;
+    text-align: start;
+    
+  
+}
+.tripletprojects{
+    display: flex;
+    flex-direction:column;
+    /* align-items: center; */
+    justify-content: space-around;/*may be deleted it later*/
+    height: 400px;
+    width: 300px;
+    /* background-color: blue; */
+ }
+.sourap{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 300px;
+    width: 300px;
+}
+.projectstitleheader{
+    background-color: white;
+    
+    color:#5C575C;
+    text-align: start;
+}
+.projectsdateheader{
+    background-color: white;
+    text-align: start;
+    color:#5C575C;
+}
+.projectsbuttondiv{
+    /* background-color:gray ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    align-self: center;
+    padding: 35px;
+
+}
+.showMoreProjectButton{
+    border: none; 
+    /* border-radius: 15px 50px;  */
+    border-radius: 100px;
+    background: #8A5284;
+    width: 127px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+ }
+ .showMoreProjectButton:hover {
+    background-color: white;
+    color: #8A5284;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } 
+  .mydivouterp{
+    position :relative;
+    width: 300px;
+    height: 300px;
+  }
+  .mybuttonoverlapp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: none;
+  }
+  
+
+  
+
+  .mydivouterp:hover .mybuttonoverlapp{ 
+    display: inline-block;
+    border-radius: 6px;
+    padding: 3px;
+    margin:0 ;
+  }
+  .mybuttonoverlapp {
+    border-radius: 4px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+   
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .mybuttonoverlapp span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .mybuttonoverlapp span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .mybuttonoverlapp:hover span {
+    padding-right: 25px;
+  }
+  
+  .mybuttonoverlapp:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+  @media screen and (max-width: 1500px)and (min-width:1300px) {
+    .tripletprojects{
+        height: 400px;
+        width: 275px;
+        /* background-color: blue; */
+    }
+    .ProjectsMainCenter{
+      width: 100%;
+    }
+    .sourap{
+        height: 275px;
+        width: 275px;
+    }
+  
+    .mydivouterp{
+        width: 275px;
+        height: 275px;
+    }
+    .mybuttonoverlapp {
+        font-size: 20px;
+        padding: 15px;
+        width: 178px;
+       
+    }
+  }
+  
+@media screen and (max-width: 1300px)and (min-width:1050px) {
+  .tripletprojects{
+      height: 400px;
+      width: 250px;
+      /* background-color: blue; */
+  }
+  .ProjectsMainCenter{
+    width: 100%;
+  }
+  .sourap{
+      height: 250px;
+      width: 250px;
+  }
+
+  .mydivouterp{
+      width: 250px;
+      height: 250px;
+  }
+  .mybuttonoverlapp{
+      font-size: 20px;
+      padding: 15px;
+      width: 170px;
+     
+  }
+}
+
+
+@media screen and (max-width: 1050px)and (min-width:800px) {
+  .tripletprojects{
+      height: 300px;
+      width: 200px;
+      /* background-color: blue; */
+  }
+  .ProjectsMainCenter{
+    width: 100%;
+  }
+  .sourap{
+      height: 200px;
+      width: 200px;
+  }
+
+  .mydivouterp{
+      width: 200px;
+      height: 200px;
+  }
+  .mybuttonoverlapp {
+      font-size: 18px;
+      padding: 13px;
+      width: 130px;  
+  }
+}
+
+
+
+
+/* done */
+@media only screen and (max-width:800px){
+  .wholeprojectssection{
+      text-align: center;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: space-around;
+      height: 3000px;
+      width: 80%;
+      background-color: white;
+      align-self: center;
+      }
+  .projectscenter{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; /* space around or something similar to center and work with the width and padding*/
+      /* background-color: #8A5284; */
+          
+      }
+  .tripletprojects{
+      height: 400px;
+      width: 300px;
+      margin: 5%;
+      /* background-color: blue; */
+      }
+  } 
+
+
+  
+  
+  
+
+
+/*done*/
+@media only screen and (max-width:380px){
+  .wholeprojectssection{
+      text-align: center;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: space-around;
+      height: 3000px;
+      width: 80%;
+      background-color: white;
+      align-self: center;
+      }
+  .projectscenter{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between; /* space around or something similar to center and work with the width and padding*/
+          /* background-color: #8A5284; */
+          
+      }
+  .tripletprojects{
+          display: flex;
+          flex-direction:column;
+          /* align-items: center; */
+          justify-content: space-around;/*I may delete it later*/
+          height: 300px;
+          width: 200px;
+          margin: 5%;
+          /* background-color: blue; */
+      }
+  .sourap{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          height: 200px;
+          width: 200px;
+      }
+
+  .mydivouterp{
+          position :relative;
+          width: 200px;
+          height: 200px;
+      }
+  .mybuttonoverlapp {
+          font-size: 18px;
+          padding: 13px;
+          width: 130px;  
+      }
+  
+}
