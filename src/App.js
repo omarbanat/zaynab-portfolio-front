@@ -10,6 +10,7 @@ import Blogss from './components/Blogs/Blogss';
 import Footer from './components/Footer';
 import Experiences from './components/Experiences';
 import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage'
+import ContactMe from './components/ContactMe';
 
 function App() {
  return(

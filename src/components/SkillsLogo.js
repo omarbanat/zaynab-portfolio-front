@@ -18,12 +18,12 @@ const Logo = () => {
         <div className='skills-Logo'>
             <div className='flex_line line-2ss'>
                 <div>
-                    <FontAwesomeIcon icon={faFigma} size="6x" color='red' />
+                    <FontAwesomeIcon icon={faFigma} size="6x"/>
                     <p> FIGMA </p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faNodeJs} size="6x" />
-                    <p> faNodeJs </p>
+                    <p> NodeJs </p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faMdb} size="6x" />
@@ -36,7 +36,7 @@ const Logo = () => {
             </div>
             <div className='flex_line line-1s'>
                 <div>
-                    <FontAwesomeIcon icon={faCss3} size="6x" color='red' />
+                    <FontAwesomeIcon icon={faCss3} size="6x"/>
                     <p> CSS </p>
                 </div>
                 <div>
