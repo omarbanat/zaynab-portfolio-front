@@ -2,12 +2,45 @@ import React from "react";
 import "./About.css";
 import { Link } from "react-scroll";
 // import { Routes,Route } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from 'axios';
+
+
 const About = () =>{
-    return(<div>
+
+
+  const API_URL = process.env.REACT_APP_API_URL;
+  const [aboutDescription, setaboutDescription] = useState();
+
+  const fetchAboutInformation = async () => {
+    await axios
+      .get(`${API_URL}/infos/getAllInformation`)
+      .then((response) => setaboutDescription(response.data.data));
+    console.log('product', aboutDescription);
+
+
+  };
+
+  useEffect(() => {
+    fetchAboutInformation();
+  }, []);
+
+
+  const aboutData =
+    aboutDescription &&
+    aboutDescription.find((data) => data.title === 'About Me')
+      ? aboutDescription.find((data) => data.title === 'About Me')
+      : null;
+
+
+      console.log( aboutDescription.find((data) => data.title === 'About Me'))
+    return(
+
+    <div>
     <div className="aboutme" id="about">
         <div className="aboutme-title"><h1>About Me</h1></div>
-        <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin volutpat lorem in viverra. Donec in maximus orci. Etiam quis neque pellentesque, bibendum nulla eu, iaculis erat. Mauris dui nibh, rhoncus ut laoreet nec, dapibus et dui. Aenean ac orci id magna finibus sodales vel ut eros. Aenean finibus ornare congue. Proin et orci non est suscipit faucibus ullamcorper at augue. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin volutpat lorem in viverra. Donec in maximus orci. Etiam quis neque pellentesque, bibendum nulla eu, iaculis erat. Mauris dui nibh, rhoncus ut laoreet nec, dapibus et dui. Aenean ac orci id magna finibus sodales vel ut eros. Aenean finibus ornare congue. Proin et orci non est suscipit faucibus ullamcorper at augue.</p></div>
+        <div><p>{aboutData?.fullDescription}</p></div>
        <div> <Link
               to="skills"
               spy={true}
