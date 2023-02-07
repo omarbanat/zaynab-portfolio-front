@@ -7,6 +7,8 @@ import Skills from './components/Skills';
 import About from './components/About';
 import React from 'react';
 import Footer from './components/Footer';
+import Blogss from './components/Blogs/Blogss';
+import Projects from './components/Projects/Projectss';
 
 function App() {
  return(
@@ -18,6 +20,8 @@ function App() {
     <About/>
     <Services/>
     <Skills/>
+    <Blogss/>
+    <Projects/>
     <Footer/>
   </div>
  )
