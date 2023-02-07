@@ -5,7 +5,8 @@ import Home from './components/Home';
 import Services from './components/Services';
 import Skills from './components/Skills';
 import About from './components/About';
-import React from 'react';
+import Projects from './components/Projects/Projectss';
+import Blogss from './components/Blogs/Blogss';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
     <About/>
     <Services/>
     <Skills/>
+    <Blogss/>
+    <Projects/>
     <Footer/>
   </div>
  )
-  
 }
 
 export default App;
