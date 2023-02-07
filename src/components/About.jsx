@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import { Link } from "react-scroll";
 // import { Routes,Route } from "react-router-dom";
+
+
 const About = () =>{
     return(<div>
     <div className="aboutme" id="about">

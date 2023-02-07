@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import './AdminLogin.css';
 import axios from 'axios';
 import { useEffect, useRef } from 'react';
-import Dashboard from '../Dashboard/Dashboard';
+import { useNavigate } from 'react-router-dom';
+
 
 const AdminLogin = () => {
+
+  const navigate=useNavigate();
+
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [errMsg, setErrMsg] = useState('');
-  const [token, setToken] = useState();
+
 
   const errRef = useRef();
   const emailRef = useRef();
@@ -17,16 +21,21 @@ const AdminLogin = () => {
     emailRef.current.focus();
   }, []);
 
+
   useEffect(() => {
-    setErrMsg('');
-  }, [email, password]);
+    if(localStorage.getItem("token")){
+      navigate("/dashboard")
+    }
+  }, []);
 
   //login function
   const login = async () => {
     axios
       .post(`http://localhost:8000/admin/login`, { email, password })
       .then((res) => {
-        setToken(res.data.token);
+  
+        localStorage.setItem("token",res.data.token);
+        navigate("/dashboard")
       })
       .catch((err) => {
         if (!err?.response) {
@@ -44,18 +53,17 @@ const AdminLogin = () => {
   //   handleSubmit will call the login function with email and password
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const token = await login({
+    await login({
       email,
       password,
     });
-    setToken(token);
+    
   };
 
+ 
   return (
-    <div>
-      {token ? (
-        <Dashboard />
-      ) : (
+    <div style={{border:"1px solid"}}>
+   
         <div className="adminlogin-container">
           <div className="adminlogin-box-container">
             <div className="login-title">LOGIN</div>
@@ -94,7 +102,7 @@ const AdminLogin = () => {
             </div>
           </div>
         </div>
-      )}
+   
     </div>
   );
 };
