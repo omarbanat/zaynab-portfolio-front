@@ -1,0 +1,281 @@
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-image: url(./bg-contact-portfolio.png); */
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+.contact-name {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #5C575C;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    justify-content: flex-start;
+    gap: 6rem;
+
+}
+
+.contact-title {
+    color: #5C575C;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45.4736px;
+}
+
+
+
+.left-buttom {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.send-btn {
+    background-color: blueviolet;
+    width: 223px;
+    height: 53px;
+    border-radius: 12px;
+
+}
+
+.name-question {
+    color: #000000;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.personal-contact{
+    font-weight: 300;
+}
+.contact-email{
+    font-weight: 300;
+}
+.midlle-content {
+    margin-top: 30px;
+    color: #5C575C;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background: #FFFFFF;
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+}
+
+
+.right input,
+.right textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 2rem;
+    width: 30rem;
+}
+
+#email-question {
+    height: 2rem;
+    width: 30rem;
+}
+
+#writing-message {
+    height: 2rem;
+    width: 30rem;
+}
+
+
+
+.text-btn {
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+}
+
+.text-btn-query {
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 27px;
+    color: white;
+}
+
+.send-btn-query {
+    background-color: blueviolet;
+    width: 300px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: black;
+
+}
+
+/* query-style */
+
+.query-style {
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.form-query {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 3rem;
+    display: none;
+}
+
+.email-query {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* display: flex; */
+    flex-direction: column;
+    /* display: none; */
+}
+
+.subject-query {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* display: flex; */
+    flex-direction: column;
+    display: none;
+}
+
+.title-query {
+    align-self: center;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.message-query textarea {
+    height: 8rem;
+    width: 20rem;
+    outline: none;
+    display: none;
+}
+
+.btn-query {
+    align-self: center;
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .contact-me {
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .contact-me {
+        display: none;
+    }
+
+    .query-style {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+
+    }
+
+    .title-query {
+        align-self: center;
+        display: flex;
+    }
+
+    .form-query {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .email-query {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subject-query {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-query {
+        margin-bottom: 2rem;
+    }
+
+    .message-query textarea {
+        height: 8rem;
+        width: 20rem;
+        outline: none;
+        display: block;
+    }
+
+    .btn-query {
+        background-color: yellow;
+        display: flex;
+        align-self: center;
+    }
+
+}

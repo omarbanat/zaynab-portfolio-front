@@ -1,15 +1,33 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import './Experiences.css';
 import ExperienceSection from './ExperienceSection';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Experiences = () => {
+  const [experiences, setExperiences] = useState([]);
+
+  const fetchExperiences = async () => {
+    const data = await axios.get(`${API_URL}/experience/getAll`);
+    setExperiences(data.data.message);
+  };
+
+  useEffect(() => {
+    fetchExperiences();
+  }, []);
+
   return (
     <div className="experience-section" id="experience">
       <h1>Experience</h1>
       <div className="experience-container">
-        <ExperienceSection right={true} />
-        <ExperienceSection right={false} />
-        <ExperienceSection right={true} />
-        <ExperienceSection right={false} />
+        {experiences.map((experience) => (
+          <ExperienceSection
+            key={experience['_id']}
+            right={experience.sort % 2}
+            data={experience}
+          />
+        ))}
       </div>
     </div>
   );

@@ -1,28 +1,31 @@
-
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AdminLogin from './components/AdminLogin/AdminLogin';
-import Dashboard from './components/Dashboard/Dashboard';
-import Portfolio from './components/Porfolio';
-
-
-
+import Navbar from './components/Navbar';
+// import {Route,Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Services from './components/Services';
+import Skills from './components/Skills';
+import About from './components/About';
+import Projects from './components/Projects/Projectss';
+import Blogss from './components/Blogs/Blogss';
+import Footer from './components/Footer';
+import Experiences from './components/Experiences';
+import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage';
+import ContactMe from './components/ContactMe';
 
 function App() {
-
   return (
-    <div className='App'>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Portfolio />}></Route>
-          <Route path="/login" element={<AdminLogin />}></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Experiences />
+      <Skills />
+      <Blogss />
+      <Projects />
+      <Footer />
     </div>
-  )
-
+  );
 }
 
 export default App;
-

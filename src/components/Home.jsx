@@ -1,21 +1,32 @@
 import React from 'react';
 import './Home.css';
 import Profile from '../images/zaynab-profile.png';
+import { useState } from 'react';
 import axios from 'axios';
-import fileDownload from 'js-file-download';
+import { useEffect } from 'react';
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 const Home = () => {
-  const baseURL = process.env.REACT_APP_API_URL;
-  const download = (e) => {
-    e.preventDefault();
-    axios({
-      baseURL: baseURL,
-      method: 'Get',
-      responseType: 'blob',
-    }).then((res) => {
-      fileDownload(res.data, 'ZaynabAbdElNabi.pdf');
-    });
+  const [description, setDescription] = useState([]);
+
+  const fetchInformation = async () => {
+    await axios
+      .get(`${API_URL}/infos/getAllInformation`)
+      .then((response) => setDescription(response.data.data));
+    console.log('product', description);
   };
+
+  useEffect(() => {
+    fetchInformation();
+  });
+
+  const homeData =
+    description && description.find((data) => data.type === 'home')
+      ? description.find((data) => data.type === 'home')
+      : null;
+
+  console.log(homeData);
 
   return (
     <div>
@@ -33,15 +44,10 @@ const Home = () => {
             </div>
           </div>
           <div className="parag">
-            <p>
-              I'm a graphics designer, designing has become my everyday affair.
-              masting styles, grids can't be less interesting.
-            </p>
+            <p>{homeData?.fullDescription}</p>
           </div>
           <div>
-            <button className="btn1" onClick={(e) => download(e)}>
-              Download CV
-            </button>
+            <button className="btn1">Download CV</button>
           </div>
         </div>
 
