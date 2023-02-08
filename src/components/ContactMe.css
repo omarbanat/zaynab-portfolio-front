@@ -1,0 +1,349 @@
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-image: url(./bg-contact-portfolio.png); */
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+.contact-name {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #5C575C;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contact-social-icon{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    justify-content: flex-start;
+    gap: 4rem;
+
+}
+
+.contact-title {
+    color: #5C575C;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45.4736px;
+}
+
+
+
+.contact-left-buttom {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.send-btn {
+    background: #8A5284;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.9;
+}
+
+.name-question {
+    color: black;
+}
+.contact-right ::placeholder{
+    color:gray;
+    height:1rem;
+}
+
+.contact-right textarea{
+    color:gray;
+    height:4rem;
+}
+.contact-right input{
+    height:3rem;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.personal-contact{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: gray;
+}
+.contact-email{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: gray;
+}
+.midlle-content {
+    margin-top: 30px;
+    color: #5C575C;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background: #FFFFFF;
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+}
+
+
+.right input,
+.right textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 2rem;
+    width: 30rem;
+}
+
+#email-question {
+    height:3rem;
+    color:gray;
+    width: 30rem;
+}
+
+#writing-message {
+    height:3rem;
+    color:gray;
+    width: 30rem;
+}
+
+
+
+.text-btn {
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+}
+
+.text-btn-query {
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+   
+    color: white;
+}
+
+.send-btn-query {
+    background: #8A5284;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.9;
+
+}
+
+/* query-style */
+
+.query-style {
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.form-query {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+}
+
+.email-query {
+   
+    color:gray;
+    width: 30rem;
+}
+
+.subject-query {
+   
+    color:gray;
+    width: 30rem;
+}
+
+.title-query {
+    align-self: center;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.message-query textarea {
+    height:8rem;
+    color:gray;
+    width: 30rem;
+}
+
+.btn-query {
+    align-self: center;
+    display: none;
+}
+
+.form-query label{
+    color:black
+}
+
+@media screen and (max-width: 1218px) {
+
+   .contact-name{
+    font-size: 3rem;
+   }
+   #email-question {
+    
+    width: 20rem;
+}
+
+#writing-message {
+ 
+    width: 20rem;
+}
+
+}
+
+@media screen and (max-width:951px){
+    .contact-left{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:886px){
+    .contact-name{
+        font-size: 2rem;
+       }
+
+    .personal-contact, .contact-email{
+        font-size: 1.1rem;
+    }
+    .contact-social-icon{
+        gap:2rem
+    }
+}
+
+
+
+@media screen and (max-width: 766px) {
+
+
+    .contact-me {
+        display: none;
+    }
+
+    .query-style {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+
+    }
+
+    .title-query {
+        align-self: center;
+        display: flex;
+    }
+
+    .form-query {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+    }
+
+    #email-question-query{
+        display: block;
+    }
+    .email-query {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+        gap:1rem
+    }
+
+    .subject-query {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    .title-query {
+        font-size: 2rem;
+        margin-top: 5rem;
+    
+    }
+
+    .message-query textarea {
+        height: 6rem;
+        width: 30rem;
+        outline: none;
+        display: block;
+    }
+
+    .btn-query {
+        
+        display: flex;
+        align-self: center;
+    }
+
+    .message-query::placeholder{
+        color:gray
+    }
+.subject-query input{
+    height:2.5rem;
+}
+.subject-query::placeholder{
+    color:gray;
+}
+.email-query input{
+    height:2.5rem;
+}
+}

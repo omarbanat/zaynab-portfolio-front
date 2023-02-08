@@ -1,0 +1,128 @@
+/* *{
+    border: 1px solid;
+} */
+
+.blogpage{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80%;
+margin: auto;
+}
+.BLOGS{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+}
+.titledatesectionblog{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 80%;
+
+}
+.blogNameBlg{
+    font-size: xxx-large;
+    font-weight: 400;
+}
+.timedescriptionblog1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 68px;
+    margin-top: -37px;
+
+
+    /* width: 80%; */
+}
+
+.descriptionofablogblg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.dateofblg{
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.ImofONEblogPage{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+#pargblg{
+    margin-top: 40px;
+   font-weight: 390;
+    word-spacing: 0.5em;
+    font-style: normal;
+    font-size: larger;
+    height: 600px;
+
+}
+@media only screen and (max-width: 1200px){
+    .ImofONEblogPage{
+        width: 800px;
+    
+    }   
+    #pargblg{
+       
+        height: 800px;
+    
+    }
+    
+}
+@media only screen and (max-width: 1000px){
+    .ImofONEblogPage{
+        width: 600px;
+       
+    }
+    #pargblg{
+       height: 1000px;
+    }
+       
+    
+}
+@media only screen and (max-width: 700px){
+    .ImofONEblogPage{
+        width: 500px;
+        height: 350px;}
+
+    .timedescriptionblog1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+    #pargblg{
+        height: 1000px;
+     }
+    
+}
+@media only screen and (max-width: 500px){
+    .ImofONEblogPage{
+        width: 400px;
+        height: 300px;
+    }   
+    
+}
+@media only screen and (max-width: 400px){
+    .ImofONEblogPage{
+        width: 330px;
+        height: 200px;
+    }  
+    #pargblg{
+        height: 1800px;
+     } 
+    
+}
