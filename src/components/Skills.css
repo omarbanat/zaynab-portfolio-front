@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .main-container::before {
@@ -37,6 +38,7 @@
     font-size: 100px;
     color: black;
     text-align: center;
+   
 
 }
 
@@ -55,3 +57,4 @@
     align-items: center;
     justify-content: space-between;
 }
+
