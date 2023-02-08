@@ -25,7 +25,7 @@ const AdminLogin = () => {
 
   useEffect(() => {
     if(localStorage.getItem("token")){
-      navigate("/dashboard")
+      navigate("/admin/dashboard")
     }
   }, []);
 
@@ -37,7 +37,7 @@ const AdminLogin = () => {
       .then((res) => {
   
         localStorage.setItem("token",res.data.token);
-        navigate("/dashboard")
+        navigate("/admin/dashboard")
       })
       .catch((err) => {
         if (!err?.response) {

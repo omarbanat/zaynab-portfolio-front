@@ -8,12 +8,12 @@ const Dashboard = () =>{
     const navigate=useNavigate();
     const handleLogout = ()=>{
       localStorage.removeItem("token");
-      navigate("/login")
+      navigate("/admin/login")
     }
 
     useEffect(() => {
         if(!localStorage.getItem("token")){
-          navigate("/login")
+          navigate("/admin/login")
         }
       }, []);
 

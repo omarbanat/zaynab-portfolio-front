@@ -5,6 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 
+
 const API_URL = process.env.REACT_APP_API_URL;
 
 const Home = () => {
@@ -14,12 +15,24 @@ const Home = () => {
     await axios
       .get(`${API_URL}/infos/getAllInformation`)
       .then((response) => setDescription(response.data.data));
-    console.log('product', description);
+    console.log('home', description);
+  };
+
+ const fileDownload = require('js-file-download')
+  const download = (e) => {
+    e.preventDefault();
+    axios({
+      baseURL: API_URL,
+      method: 'Get',
+      responseType: 'blob',
+    }).then((res) => {
+      fileDownload(res.data, 'ZaynabAbdElNabi.pdf');
+    });
   };
 
   useEffect(() => {
     fetchInformation();
-  });
+  },[]);
 
   const homeData =
     description && description.find((data) => data.type === 'home')
@@ -47,7 +60,7 @@ const Home = () => {
             <p>{homeData?.fullDescription}</p>
           </div>
           <div>
-            <button className="btn1">Download CV</button>
+            <button className="btn1"  onClick={(e) => download(e)}>Download CV</button>
           </div>
         </div>
 

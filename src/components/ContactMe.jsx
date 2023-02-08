@@ -23,9 +23,9 @@ const ContactMe = () => {
     return (
         <>
             <div className="contact-me">
-                <div class="left">
+                <div class="contact-left">
                     <div className="contact-name">Zaynab Abd El<br /> Nabi</div>
-                    <div className="social-icon">
+                    <div className="contact-social-icon">
                         <div className="facebook-icon">
                             <FontAwesomeIcon icon={faFacebook} color='grey' />
                         </div>
@@ -39,7 +39,7 @@ const ContactMe = () => {
                             <FontAwesomeIcon icon={faInstagram} color='grey' />
                         </div>
                     </div>
-                    <div className="left-buttom">
+                    <div className="contact-left-buttom">
                         <div className="personal-contact">
                             <div className="personal-contact">My personal contact </div>
                             <div className="phone-number">+961 81 286 345</div>
@@ -57,7 +57,7 @@ const ContactMe = () => {
                 <div className="right-container">
                     <div className="midlle-content">Contact<br />me</div>
 
-                    <form class="right" id="myForm" onSubmit={sendEmail}>
+                    <form class="contact-right" id="myForm" onSubmit={sendEmail}>
                         <input type="text" id="name-question" name="name" placeholder="What is your name ?" />
                         <input type="email" id="email-question" name="email" placeholder="What is your Email ?" />
                         <textarea type="text" id="writing-message" name="message" placeholder="Write a message" />

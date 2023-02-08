@@ -14,7 +14,7 @@ const About = () => {
     await axios
       .get(`${API_URL}/infos/getAllInformation`)
       .then((response) => setaboutDescription(response.data.data));
-    console.log('product', aboutDescription);
+    console.log('info', aboutDescription);
   };
 
   useEffect(() => {
@@ -23,11 +23,11 @@ const About = () => {
 
   const aboutData =
     aboutDescription &&
-    aboutDescription.find((data) => data.title === 'About Me')
-      ? aboutDescription.find((data) => data.title === 'About Me')
+    aboutDescription.find((data) => data.type === 'about')
+      ? aboutDescription.find((data) => data.type === 'about')
       : null;
 
-  console.log(aboutDescription.find((data) => data.title === 'About Me'));
+
   return (
     <div>
       <div className="aboutme" id="about">

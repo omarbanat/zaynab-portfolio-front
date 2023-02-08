@@ -1,31 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar';
-// import {Route,Routes} from 'react-router-dom';
-import Home from './components/Home';
-import Services from './components/Services';
-import Skills from './components/Skills';
-import About from './components/About';
-import Projects from './components/Projects/Projectss';
-import Blogss from './components/Blogs/Blogss';
-import Footer from './components/Footer';
-import Experiences from './components/Experiences';
-import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage';
-import ContactMe from './components/ContactMe';
-import AllProjectsPage from './components/AllProjectsPage/AllProjectsPage';
-import ExperienceSection from './components/ExperienceSection';
-
+import { Route, Routes } from 'react-router-dom';
+import Portfolio from "./components/Portfolio";
+import AdminLogin from "./components/AdminLogin/AdminLogin";
+import Dashboard from "./components/Dashboard/Dashboard";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Experiences />
-      <Skills />
-      <Blogss />
-      <Projects />
-      <Footer />
+      
+
+      <Routes>
+        <Route path="/" element={<Portfolio></Portfolio>}></Route>
+        <Route path="/admin/login" element={<AdminLogin></AdminLogin>}></Route>
+        <Route path="/admin/dashboard" element={<Dashboard></Dashboard>}></Route>
+      </Routes>
     </div>
   );
 }

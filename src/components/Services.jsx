@@ -16,12 +16,12 @@ const Services = () => {
     await axios
       .get(`${API_URL}/infos/getAllInformation`)
       .then((response) => setserviceDescription(response.data.data));
-    console.log('product', serviceDescription);
+    console.log('services', serviceDescription);
   };
 
   useEffect(() => {
     fetchServiceInformation();
-  });
+  },[]);
 
   const designData =
     serviceDescription &&

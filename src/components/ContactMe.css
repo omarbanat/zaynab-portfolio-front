@@ -21,7 +21,7 @@
     gap: 2rem;
 }
 
-.contact-me {
+.contact-social-icon{
     display: flex;
     flex-direction: row;
     font-size: 2rem;
@@ -40,7 +40,7 @@
 
 
 
-.left-buttom {
+.contact-left-buttom {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -48,7 +48,7 @@
 }
 
 .send-btn {
-    background-color: blueviolet;
+    background-color: #8A5284;
     width: 223px;
     height: 53px;
     border-radius: 12px;
@@ -56,10 +56,22 @@
 }
 
 .name-question {
-    color: #000000;
+    color: black;
+}
+.contact-right ::placeholder{
+    color:gray;
+    height:1rem;
 }
 
-.left {
+.contact-right textarea{
+    color:gray;
+    height:4rem;
+}
+.contact-right input{
+    height:3rem;
+}
+
+.contact-left {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -69,10 +81,14 @@
 }
 
 .personal-contact{
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: gray;
 }
 .contact-email{
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: gray;
 }
 .midlle-content {
     margin-top: 30px;
@@ -92,7 +108,7 @@
     padding-left: 40px;
 }
 
-.right {
+.contact-right{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -107,18 +123,20 @@
 .right textarea {
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
     height: 2rem;
     width: 30rem;
 }
 
 #email-question {
-    height: 2rem;
+    height:3rem;
+    color:gray;
     width: 30rem;
 }
 
 #writing-message {
-    height: 2rem;
+    height:3rem;
+    color:gray;
     width: 30rem;
 }
 
