@@ -163,7 +163,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-   
     color: white;
 }
 
@@ -267,6 +266,21 @@
 
 @media screen and (max-width: 766px) {
 
+    .send-btn-query {
+        background-color: black;
+        
+    }
+.message-query{
+     font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+}
+
+    
 
     .contact-me {
         display: none;
