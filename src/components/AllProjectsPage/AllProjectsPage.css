@@ -1,0 +1,14 @@
+.ProjectstitleL{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    background-color: #8A5284;
+    color: white;
+    margin-bottom: 200px;
+}
+#allProjectsPage{
+    margin-bottom: 200px ;
+}

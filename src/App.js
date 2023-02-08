@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import Experiences from './components/Experiences';
 import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage';
 import ContactMe from './components/ContactMe';
+import AllProjectsPage from './components/AllProjectsPage/AllProjectsPage';
+import ExperienceSection from './components/ExperienceSection';
 
 function App() {
   return (

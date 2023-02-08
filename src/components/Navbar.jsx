@@ -100,8 +100,8 @@ const Navbar = () => {
               to="blogs"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-300}
+              duration={900}
               onClick={closeMenu}
             >
           <li div="blogs">
