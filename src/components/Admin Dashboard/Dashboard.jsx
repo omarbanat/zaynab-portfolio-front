@@ -1,4 +1,6 @@
 import './Dashboard.css';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import profile from '../../images/zaynab-profile.png';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home';
@@ -10,6 +12,18 @@ import Blogs from './Blogs';
 import Projects from './Projects';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/admin/login');
+  };
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      navigate('/admin/login');
+    }
+  }, []);
   return (
     <div className="dashboard">
       <div className="dashboard-sidenavbar">
@@ -40,12 +54,13 @@ const Dashboard = () => {
             <a href="/admin/blogs">Blogs</a>
           </li>
         </ul>
-        <a className="logout-btn" href="/logout">
+        <button onClick={handleLogout} className="logout-btn">
           Logout
-        </a>
+        </button>
       </div>
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
