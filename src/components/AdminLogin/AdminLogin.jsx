@@ -64,7 +64,7 @@ const AdminLogin = () => {
 
  
   return (
-    <div style={{border:"1px solid"}}>
+    <div >
    
         <div className="adminlogin-container">
           <div className="adminlogin-box-container">
