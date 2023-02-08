@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 const Dashboard = () =>{
 
     const navigate=useNavigate();
+    const handleLogout = ()=>{
+      localStorage.removeItem("token");
+      navigate("/login")
+    }
 
     useEffect(() => {
         if(!localStorage.getItem("token")){
@@ -13,9 +17,11 @@ const Dashboard = () =>{
         }
       }, []);
 
+    
     return(
         <div className="Dashboard">
             <h1>Dashboard</h1>
+            <button className="buttonone" onClick={handleLogout}>logout</button>
         </div>
     )
 }
