@@ -1,0 +1,98 @@
+.admin-home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20em;
+}
+
+.admin-home h1 {
+  color: #8a5284;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.admin-home__container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(217, 217, 217, 0.3);
+  border-radius: 2em;
+  width: 80vw;
+  margin: 1em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.admin-home__container label {
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  margin: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-home__container input {
+  background-color: #d9d9d9;
+  border-radius: 1em;
+  width: 78%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.7em;
+  padding: 0.75em;
+}
+
+.admin-home__container textarea {
+  resize: none;
+  background-color: #d9d9d9;
+  border-radius: 1em;
+  width: 78%;
+  height: 20vh;
+  max-height: 25vh;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.7em;
+  padding: 0.75em;
+}
+
+@media (max-width: 768px) {
+  .admin-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .admin-home h1 {
+    font-size: 2em;
+    margin: 0em;
+    margin-top: 1em;
+  }
+
+  .admin-home__container {
+    width: 90vw;
+    padding: 0.8em 1em;
+    margin: 0.8em;
+    font-size: 1.5em;
+  }
+
+  .admin-home__container label {
+    flex-direction: column;
+  }
+
+  .admin-home__container input,
+  .admin-home__container textarea {
+    width: 100%;
+    height: 8vh;
+  }
+
+  .admin-home__container textarea {
+    height: 15vh;
+  }
+}

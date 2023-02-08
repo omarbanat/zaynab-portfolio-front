@@ -1,17 +1,17 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Portfolio from "./components/Portfolio";
-import AdminLogin from "./components/AdminLogin/AdminLogin";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from './components/Admin Dashboard/Dashboard';
+import AdminLogin from './components/AdminLogin/AdminLogin';
+import Main from './Main';
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-      
-
       <Routes>
-        <Route path="/" element={<Portfolio></Portfolio>}></Route>
-        <Route path="/admin/login" element={<AdminLogin></AdminLogin>}></Route>
-        <Route path="/admin/dashboard" element={<Dashboard></Dashboard>}></Route>
+        <Route path="/admin" exact element={<AdminLogin />} />
+        <Route path="/admin/login" exact element={<AdminLogin />} />
+        <Route path="/admin/*" element={<Dashboard />}></Route>
+        <Route path="/*" exact element={<Main />} />
       </Routes>
     </div>
   );
