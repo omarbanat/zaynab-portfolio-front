@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AdminLogin = () => {
 
+  
   const navigate=useNavigate();
 
   const [email, setEmail] = useState();
@@ -28,10 +29,11 @@ const AdminLogin = () => {
     }
   }, []);
 
+  const API_URL = process.env.REACT_APP_API_URL
   //login function
   const login = async () => {
     axios
-      .post(`http://localhost:8000/admin/login`, { email, password })
+      .post(`${API_URL}/admin/login`, { email, password })
       .then((res) => {
   
         localStorage.setItem("token",res.data.token);
