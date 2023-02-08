@@ -1,6 +1,7 @@
 .admin-experiences {
   display: flex;
   flex-direction: column;
+  margin-left: 20em;
 }
 
 .admin-experiences h1 {
