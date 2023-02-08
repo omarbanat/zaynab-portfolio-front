@@ -8,26 +8,26 @@ import About from './components/About';
 import Projects from './components/Projects/Projectss';
 import Blogss from './components/Blogs/Blogss';
 import Footer from './components/Footer';
-
-
 import Experiences from './components/Experiences';
-import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage'
+import Oneprojectpage from './components/Oneprojectpage/Oneprojectpage';
 import ContactMe from './components/ContactMe';
 import AllProjectsPage from './components/AllProjectsPage/AllProjectsPage';
 import ExperienceSection from './components/ExperienceSection';
 
 function App() {
- return(
-  <div className='App'>
-  <AllProjectsPage/>
-  </div>
- )
-
+  return (
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Experiences />
+      <Skills />
+      <Blogss />
+      <Projects />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
-
-/* <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      <Route path="/about" element={<About></About>}></Route>
-    </Routes> */

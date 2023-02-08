@@ -5,17 +5,16 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Home = () => {
-  const API_URL = process.env.REACT_APP_API_URL;
-  const [description, setDescription] = useState();
+  const [description, setDescription] = useState([]);
 
   const fetchInformation = async () => {
     await axios
       .get(`${API_URL}/infos/getAllInformation`)
       .then((response) => setDescription(response.data.data));
     console.log('product', description);
-
-
   };
 
   useEffect(() => {
@@ -23,9 +22,11 @@ const Home = () => {
   });
 
   const homeData =
-    description && description.find((data)=>data.type==='home')? description.find((data)=>data.type==='home'):null;
+    description && description.find((data) => data.type === 'home')
+      ? description.find((data) => data.type === 'home')
+      : null;
 
-    console.log(homeData)
+  console.log(homeData);
 
   return (
     <div>
