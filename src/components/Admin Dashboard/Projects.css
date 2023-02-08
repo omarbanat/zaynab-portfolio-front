@@ -1,0 +1,19 @@
+.admin-projects {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20em;
+}
+
+.admin-projects h1 {
+  color: #8a5284;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.admin-projects__list {
+  display: flex;
+  flex-direction: column;
+}
