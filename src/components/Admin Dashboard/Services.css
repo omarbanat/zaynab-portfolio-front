@@ -1,0 +1,20 @@
+.admin-services {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19em;
+}
+
+.admin-services h1 {
+  color: #8a5284;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.admin-services__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
