@@ -87,7 +87,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={50}
-              duration={500}
+              duration={1500}
               onClick={closeMenu}
             >
           <li div="projects">
@@ -100,13 +100,13 @@ const Navbar = () => {
               to="blogs"
               spy={true}
               smooth={true}
-              offset={-300}
-              duration={900}
+              offset={-50}
+              duration={1500}
               onClick={closeMenu}
             >
           <li div="blogs">
          
-              BLogs
+              Blogs
            
           </li>
           </Link>
@@ -114,8 +114,8 @@ const Navbar = () => {
               to="contacts"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-50}
+              duration={1500}
               onClick={closeMenu}
             >
           <li div="contacts">

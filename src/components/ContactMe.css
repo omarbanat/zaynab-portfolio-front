@@ -26,7 +26,7 @@
     flex-direction: row;
     font-size: 2rem;
     justify-content: flex-start;
-    gap: 6rem;
+    gap: 4rem;
 
 }
 
@@ -48,11 +48,16 @@
 }
 
 .send-btn {
-    background-color: #8A5284;
-    width: 223px;
-    height: 53px;
-    border-radius: 12px;
-
+    background: #8A5284;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.9;
 }
 
 .name-question {
@@ -181,29 +186,20 @@
 .form-query {
     /* display: flex; */
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     display: none;
 }
 
 .email-query {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 15px;
-    /* display: flex; */
-    flex-direction: column;
-    /* display: none; */
+    height:4rem;
+    color:gray;
+    width: 30rem;
 }
 
 .subject-query {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 15px;
-    /* display: flex; */
-    flex-direction: column;
-    display: none;
+    height:4rem;
+    color:gray;
+    width: 30rem;
 }
 
 .title-query {
@@ -213,10 +209,9 @@
 }
 
 .message-query textarea {
-    height: 8rem;
-    width: 20rem;
-    outline: none;
-    display: none;
+    height:8rem;
+    color:gray;
+    width: 30rem;
 }
 
 .btn-query {
@@ -224,18 +219,44 @@
     display: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1218px) {
 
-    .contact-me {
+   .contact-name{
+    font-size: 3rem;
+   }
+   #email-question {
+    
+    width: 20rem;
+}
 
-        flex-direction: column;
-
-    }
+#writing-message {
+ 
+    width: 20rem;
+}
 
 }
 
+@media screen and (max-width:951px){
+    .contact-left{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:886px){
+    .contact-name{
+        font-size: 2rem;
+       }
 
-@media screen and (max-width: 600px) {
+    .personal-contact, .contact-email{
+        font-size: 1.1rem;
+    }
+    .contact-social-icon{
+        gap:2rem
+    }
+}
+
+
+
+@media screen and (max-width: 766px) {
 
 
     .contact-me {
@@ -257,9 +278,13 @@
     .form-query {
         display: flex;
         flex-direction: column;
+        margin-left: 2rem;
 
     }
 
+    #email-question-query{
+        display: block;
+    }
     .email-query {
         font-family: 'Nunito Sans';
         font-style: normal;
@@ -280,12 +305,14 @@
     }
 
     .title-query {
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        margin-top: 5rem;
+    
     }
 
     .message-query textarea {
         height: 8rem;
-        width: 20rem;
+        width: 30rem;
         outline: none;
         display: block;
     }

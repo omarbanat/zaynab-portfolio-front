@@ -22,21 +22,24 @@ const ContactMe = () => {
 
     return (
         <>
-            <div className="contact-me">
+            <div id="contacts" className="contact-me">
                 <div class="contact-left">
                     <div className="contact-name">Zaynab Abd El<br /> Nabi</div>
                     <div className="contact-social-icon">
                         <div className="facebook-icon">
-                            <FontAwesomeIcon icon={faFacebook} color='grey' />
+                        <a href="https://www.facebook.com/zaynab.abdelnabi" target="_blank">
+                            <FontAwesomeIcon icon={faFacebook} color='grey' /></a>
                         </div>
                         <div class="LinkedIn-icon">
-                            <FontAwesomeIcon icon={faLinkedinIn} color='grey' />
+                        <a href="https://www.linkedin.com/in/zaynababdelnabi" target="_blank">
+                            <FontAwesomeIcon icon={faLinkedinIn} color='grey' /></a>
                         </div>
                         <div class="twitter-icon">
                             <FontAwesomeIcon icon={faTwitter} color='grey' />
                         </div>
                         <div class="instagram-icon">
-                            <FontAwesomeIcon icon={faInstagram} color='grey' />
+                        <a href="https://www.instagram.com/zaynab.abdelnabi/?igshid=YmMyMTA2M2Y=" target="_blank"> 
+                            <FontAwesomeIcon icon={faInstagram} color='grey' /></a>
                         </div>
                     </div>
                     <div className="contact-left-buttom">
@@ -66,6 +69,7 @@ const ContactMe = () => {
 
                 </div>
             </div>
+            
             <div className="query-style">
 
                 <div className="title-query"> GET IN TOUCH</div>
@@ -74,7 +78,7 @@ const ContactMe = () => {
                     <form className="form-query">
 
                         <div className="email-query">
-                            <label for="email">Your Email Address</label>
+                           <div><label for="email">Your Email Address</label></div> 
                             <input type="email" id="email-question-query" name="text" placeholder="something@website.com" />
                         </div>
 

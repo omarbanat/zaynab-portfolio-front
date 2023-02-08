@@ -11,7 +11,7 @@ import projectFour from './images/poroforo.png';
 
 function Projects() {
   return (
-    <div>
+    <div id="projects">
      
 
       <div className="wholeprojectssection">

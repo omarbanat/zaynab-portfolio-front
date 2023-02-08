@@ -7,7 +7,7 @@ import blogThree from './images/blogTHREE.png'
 function Blogss() {
   return (
     
-      <div className="wholeblogssection">
+      <div id="blogs" className="wholeblogssection">
         
         
         
@@ -65,4 +65,4 @@ function Blogss() {
   )
 }
 
-export default Blogss
+export default Blogss;
