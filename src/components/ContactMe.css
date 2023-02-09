@@ -361,3 +361,22 @@
     height:2.5rem;
 }
 }
+
+@media screen  and (max-width:547px){
+    
+    .form-query {
+        margin-left: 1rem;
+    }
+
+    .message-query textarea {
+        width: 17rem !important;
+    }
+
+    .subject-query{
+        width:25rem;
+    }
+
+    .email-query{
+        width:25rem;
+    }
+}
