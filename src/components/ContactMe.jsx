@@ -21,8 +21,8 @@ const ContactMe = () => {
     }
 
     return (
-        <>
-            <div id="contacts" className="contact-me">
+        <div id="contacts">
+            <div  className="contact-me">
                 <div class="contact-left">
                     <div className="contact-name">Zaynab Abd El<br /> Nabi</div>
                     <div className="contact-social-icon">
@@ -103,7 +103,7 @@ const ContactMe = () => {
 
             </div>
 
-        </>
+        </div>
     )
 
 }
