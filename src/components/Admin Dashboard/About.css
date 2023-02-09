@@ -30,6 +30,7 @@
   margin: 0.5em;
   display: flex;
   justify-content: space-between;
+  color: black;
 }
 
 .admin-about__container input {
