@@ -89,6 +89,7 @@ const ContactMe = () => {
                         </div>
 
                         <div className="message-query">
+                            <label for="text">Message</label>
                             <textarea type="text" id="query-writing-message" name="text" placeholder="Your message starts with..." />
                         </div>
 

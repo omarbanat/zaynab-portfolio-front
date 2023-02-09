@@ -6,16 +6,18 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import About from './components/About';
 import Footer from './components/Footer';
+import ContactMe from './components/ContactMe';
 
 const Main = () => {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Skills />
-      <Footer />
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Services/>
+      <Skills/>
+      <ContactMe/>
+      <Footer/>
     </div>
   );
 };
