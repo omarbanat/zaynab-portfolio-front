@@ -19,8 +19,8 @@ const Main = () => {
       <Services/>
       <Experiences/>
       <Skills/>
-    <Projects/>
-    <Blogs/>
+      <Projects/>
+      <Blogs/>
       <ContactMe/>
       <Footer/>
     </div>

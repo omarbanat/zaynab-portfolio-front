@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-      <p className="site-title" onClick={OnClickHandler}>
+       <p className="site-title" onClick={OnClickHandler}>
         ZAYNAB <span>ABD AL NABI</span>
       </p>
 

@@ -3,11 +3,11 @@ import { BiPurchaseTag } from 'react-icons/bi';
 import { MdDateRange } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 import { RiLinkM } from 'react-icons/ri';
-import OnePrj from './Images/Imagessectionblog.png';
+import REALLDOME from './images/myDoctorProject.png';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import './Oneprojectpage.css';
-function Oneprojectpage() {
+
+function RealProjectTwo() {
   return (
     <div>
       <Navbar />
@@ -16,18 +16,18 @@ function Oneprojectpage() {
       <div className="OneprojectPage">
         <div className="AProjectContent">
           <div className="imagesofproject">
-            <img src={OnePrj} alt="ProjectImage" className="ProjImj" />
+            <img src={REALLDOME} alt="ProjectImage" className="ProjImj" />
           </div>
         </div>
         <div className="paragraphofproject">
           <div className="dateofprj">
             <p>
               <MdDateRange />
-              22-04-2022
+              27-05-2022
             </p>
           </div>
 
-          <h2 className="ProjectNameprj">Project Name</h2>
+          <h2 className="ProjectNameprj">My-Doctor</h2>
           <div className="descriptionofaproject">
             <p>
               <BiPurchaseTag />
@@ -36,18 +36,8 @@ function Oneprojectpage() {
           </div>
 
           <p className="paragprj">
-           
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis ipsam reiciendis soluta libero iure inventore atque
-            aliquam, commodi aliquid nam rerum vitae quisquam, nisi, harum
-            voluptas sit beatae voluptatem autem. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Blanditiis libero in hic obcaecati est
-            quod quidem ipsa eligendi a molestias laboriosam, similique vero ad
-            dolores inventore voluptatum. Illo, nemo possimus. Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit. Officiis accusantium
-            adipisci rem accusamus. Repellat non distinctio cupiditate
-            laudantium quis necessitatibus et. Sint exercitationem explicabo
-            totam nostrum distinctio. Doloribus, illo esse.
+          
+          mobile application to connect doctors and patients that build using React, React Native and expo. In addition to using JavaScript, Express for the backend with postgreSQL database
           </p>
           <div className="buttonsPRJ">
             <a href="https://www.youtube.com/@zaynababdelnabi6446" target="_blank"><button type="button" className="showLINKPrjbtn">
@@ -65,4 +55,4 @@ function Oneprojectpage() {
   );
 }
 
-export default Oneprojectpage;
+export default RealProjectTwo;

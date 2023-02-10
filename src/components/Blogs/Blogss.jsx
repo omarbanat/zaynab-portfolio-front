@@ -3,6 +3,7 @@ import "./Blogss.css"
 import blogOne from './images/blogONE.png'
 import blogTwo from './images/blogTWO.png'
 import blogThree from './images/blogTHREE.png'
+import { Link } from 'react-router-dom';
 
 function Blogss() {
   return (
@@ -53,7 +54,7 @@ function Blogss() {
         
         
         <div className='blogsbuttondiv'>
-        <button type="button" className="showMoreBlogButton">Show More</button>
+        <Link to="/blogs"><button type="button" className="showMoreBlogButton">Show More</button></Link>
         </div>
 
 
