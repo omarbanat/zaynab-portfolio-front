@@ -8,9 +8,10 @@ import projectOne from '../Projects/images/projectONE.png';
 import projectSix from '../Projects/images/projectSIX.png';
 import projectFour from '../Projects/images/poroforo.png';
 import Footer from '../Footer';
+import {useNavigate } from 'react-router-dom';
 function AllProjectsPage() {
   return (
-    <div>
+    <div id="ALLPROJECTS">
         <h1 className='ProjectstitleL'>Projects</h1>
       <div className='ProjectsMainCenter' id='allProjectsPage'>
         
@@ -103,6 +104,7 @@ function AllProjectsPage() {
             </div>
         
         </div>
+        
        <Footer/>
     </div>
     

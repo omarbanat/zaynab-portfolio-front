@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 
+
 const About = () => {
   const API_URL = process.env.REACT_APP_API_URL;
   const [aboutDescription, setaboutDescription] = useState([]);
