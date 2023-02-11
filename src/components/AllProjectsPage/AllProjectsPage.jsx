@@ -1,17 +1,12 @@
 import React from 'react'
 import './AllProjectsPage.css'
-import projectFive from '../Projects/images/projectFIVE.png'
 import REALLDEMO from '../RealProjectTwo/images/myDoctorProject.png'
-import projectTwo from '../Projects/images/projectTWO.png';
-import projectThree from '../Projects/images/projectTHREE.png';
-import projectOne from '../Projects/images/projectONE.png';
 import REALDEMO from '../Projects/images/CoverProjectOneRD.png';
-import projectSix from '../Projects/images/projectSIX.png';
-import projectFour from '../Projects/images/poroforo.png';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
-import PORTfolio from '../Projects/images/Portfolio.png';
+import PORTfolio from '../Projects/images/portfolioAP.png';
 import { Link } from 'react-router-dom';
+
 function AllProjectsPage() {
   return (
     <div>
@@ -19,11 +14,11 @@ function AllProjectsPage() {
         <h1 className='ProjectstitleL'>Projects</h1>
       <div className='ProjectsMainCenter' id='allProjectsPage'>
         
-        <div className='projectscenter'>
-            <div className='tripletprojects'>
+        <div className='projectscenter' id="columnsection">
+            <div className='tripletprojects' >
                 <div class="mydivouterp">
                 <img className="sourap" src={REALDEMO} alt="firstimage"/>
-                <Link to="/projectone"><button type="button" class="mybuttonoverlapp"><span>Read More</span></button></Link>
+                
                 </div>
                 <p className="projectstitleheader"><b>Financial App with Mobile App</b></p>
                 <p className="projectsdateheader">April 2022</p>
@@ -32,7 +27,7 @@ function AllProjectsPage() {
             <div className='tripletprojects'>
             <div class="mydivouterp">
                 <img className="sourap" src={REALLDEMO} alt="firstimage"/>
-                <Link to="/projecttwo"><button type="button" class="mybuttonoverlapp"><span>Read More</span></button></Link>
+               
                 </div>
                 <p className="projectstitleheader"><b>My Doctor</b></p>
                 <p className="projectsdateheader">Published Date</p>
@@ -41,74 +36,47 @@ function AllProjectsPage() {
             <div className='tripletprojects'>
             <div class="mydivouterp">
                 <img className="sourap" src={PORTfolio} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
+                
                 </div>
-                <p className="projectstitleheader"><b>Portfolio Website</b></p>
-                <p className="projectsdateheader">March 2021</p>
+                <p className="projectstitleheader"><b>Portfolio With Dashboard</b></p>
+                <p className="projectsdateheader">February 2022</p>
             </div>
             </div>
-
-
-        <div className='projectscenter'>
-            <div className='tripletprojects'>
-            <div class="mydivouterp">
-                <img className="sourap" src={projectFour} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
-                </div>
-                <p className="projectstitleheader"><b>Project Title</b></p>
-                <p className="projectsdateheader">Published Date</p>
-            </div>
-
-            <div className='tripletprojects'>
-            <div class="mydivouterp"> 
-                <img className="sourap" src={projectFive} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
-                </div>
-                <p className="projectstitleheader"><b>Araby Company Website </b></p>
-                <p className="projectsdateheader">May 2021</p>
-            </div>
-
-            <div className='tripletprojects'>
-            <div class="mydivouterp">
-                <img className="sourap" src={projectSix} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
-                </div>
-                <p className="projectstitleheader"><b>Project Title</b></p>
-                <p className="projectsdateheader">Published Date</p>
-            </div>
-
-        </div>
-        <div className='projectscenter'>
-            <div className='tripletprojects'>
+            <div className='projectscenter' >
+            <div className='tripletprojects' id="description-one">
                 <div class="mydivouterp">
-                <img className="sourap" src={projectOne} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
+                    <p>  <ul> 
+                <li>One centralized application that manages the finances of a company (expenses, incomes).</li>
+                <li>Built using React Js for the frontend and Laravel for the backend with MySQL as database.</li>
+                <li>Mobile app also provided using react native.</li>
+              </ul></p>
                 </div>
-                <p className="projectstitleheader"><b>Personal Portfolio </b></p>
-                <p className="projectsdateheader">April 2021</p>
+                
  
             </div>
-            <div className='tripletprojects'>
+            <div className='tripletprojects' id="description-two">
             <div class="mydivouterp">
-                <img className="sourap" src={projectTwo} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
+                <p> Mobile application to connect doctors and patients that build using React, React Native and expo. In addition to using JavaScript, Express for the backend with postgreSQL database.</p>
                 </div>
-                <p className="projectstitleheader"><b>Project Title</b></p>
-                <p className="projectsdateheader">Published Date</p>
+                
 
             </div>
-            <div className='tripletprojects'>
+            <div className='tripletprojects' id="description-three">
             <div class="mydivouterp">
-                <img className="sourap" src={projectThree} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlapp"><span>Read More</span></button>
+                <p className="discription"> Built by MERN stack, React Js for the frontend and Node Js for the backend with MongoDB
+                 as database .</p>
                 </div>
-                <p className="projectstitleheader"><b>Project Title</b></p>
-                <p className="projectsdateheader">Published Date</p>
+               
             </div>
             </div>
+
+
+
         
-        </div>
+         </div>
+        
        <Footer/>
+   
     </div>
     
   )

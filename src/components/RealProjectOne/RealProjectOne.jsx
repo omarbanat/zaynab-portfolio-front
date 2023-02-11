@@ -6,6 +6,7 @@ import {RiLinkM} from 'react-icons/ri';
 import RealDemo from  '../RealProjectOne/Images/ProjectRealOne.png';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import '../Oneprojectpage/Oneprojectpage.css';
 
 
 

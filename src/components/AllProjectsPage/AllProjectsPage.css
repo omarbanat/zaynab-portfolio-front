@@ -11,3 +11,9 @@
 #allProjectsPage{
     margin-bottom: 200px ;
 }
+
+@media only screen and (max-width:800px){
+    #description-one, #description-two, #description-three{
+        display: none;
+    }
+}

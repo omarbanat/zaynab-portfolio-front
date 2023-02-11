@@ -23,7 +23,7 @@ function Blogss() {
             <div className='tripletblogs'>
                 <div class="mydivouter">	
                   <img className="BlogImagetriplet" src={blogOne} alt="firstimage"/>
-                  <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                  <Link to="/blogid"><button type="button" class="mybuttonoverlap"><span>Read More</span></button></Link>
                 </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>
@@ -32,7 +32,7 @@ function Blogss() {
             <div className='tripletblogs'>
                 <div class="mydivouter">	
                 <img className="BlogImagetriplet" src={blogTwo} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                <Link to="/blogid"><button type="button" class="mybuttonoverlap"><span>Read More</span></button></Link> 
                 </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>
@@ -41,7 +41,7 @@ function Blogss() {
             <div className='tripletblogs'>
                 <div class="mydivouter">
                 <img className="BlogImagetriplet" src={blogThree} alt="firstimage"/>
-                <button type="button" class="mybuttonoverlap"><span>Read More</span></button>
+                <Link to="/blogid"><button type="button" class="mybuttonoverlap"><span>Read More</span></button></Link>
                 </div>
                 <p className="blogstitleheader"><b>Blog Title</b></p>
                 <p className="blogsdateheader">Published Date</p>

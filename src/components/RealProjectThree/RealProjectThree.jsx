@@ -1,13 +1,15 @@
-import React from 'react';
+import React from 'react'
 import { BiPurchaseTag } from 'react-icons/bi';
 import { MdDateRange } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 import { RiLinkM } from 'react-icons/ri';
-import REALLDOME from './images/myDoctorProject.png';
+import REALLLDOME from './images/PortfolioSP.png';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import '../Oneprojectpage/Oneprojectpage.css';
-function RealProjectTwo() {
+
+
+function RealProjectThree() {
   return (
     <div>
       <Navbar />
@@ -16,18 +18,18 @@ function RealProjectTwo() {
       <div className="OneprojectPage">
         <div className="AProjectContent">
           <div className="imagesofproject">
-            <img src={REALLDOME} alt="ProjectImage" className="ProjImj" />
+            <img src={REALLLDOME} alt="ProjectImage" className="ProjImj" />
           </div>
         </div>
         <div className="paragraphofproject">
           <div className="dateofprj">
             <p>
               <MdDateRange />
-              27-05-2022
+              February 2022
             </p>
           </div>
 
-          <h2 className="ProjectNameprj">My-Doctor</h2>
+          <h2 className="ProjectNameprj">Portfolio With Dashboard</h2>
           <div className="descriptionofaproject">
             <p>
               <BiPurchaseTag />
@@ -37,7 +39,8 @@ function RealProjectTwo() {
 
           <p className="paragprj">
           
-          Mobile application to connect doctors and patients that build using React, React Native and expo. In addition to using JavaScript, Express for the backend with postgreSQL database
+          Built by MERN stack, React Js for the frontend and Node Js for the backend with MongoDB
+as database
           </p>
           <div className="buttonsPRJ">
             <a href="https://www.youtube.com/@zaynababdelnabi6446" target="_blank"><button type="button" className="showLINKPrjbtn">
@@ -51,8 +54,9 @@ function RealProjectTwo() {
       </div>
 
       <Footer />
+
     </div>
-  );
+  )
 }
 
-export default RealProjectTwo;
+export default RealProjectThree
