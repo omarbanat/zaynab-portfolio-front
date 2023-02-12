@@ -8,8 +8,8 @@
     flex-direction: column;
     justify-content: space-around; 
     align-items: space-around;
-    height: 1100px;
-
+    height: 700px;
+    font-size: 1.4rem;
     background-color: white;
     /* align-self: center; */
     padding: 2px;
@@ -80,20 +80,32 @@
 
 }
 .showMoreProjectButton{
-    border: none; 
+    /* border: none;  */
     /* border-radius: 15px 50px;  */
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    /* background: #8A5284; */
+    /* width: 127px;
+    height: 50px; */
+    /* color: white;
+    font-weight: bold; */
+
+
     background: #8A5284;
-    width: 127px;
-    height: 50px;
+    border-radius: 18px;
     color: white;
-    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.9;
  }
  .showMoreProjectButton:hover {
     background-color: white;
     color: #8A5284;
     font-weight: bold;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0.5px solid  #8A5284;
   } 
   .mydivouterp{
     position :relative;

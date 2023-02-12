@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-      <p className="site-title" onClick={OnClickHandler}>
-        ZAYNAB <span>ABD AL NABI</span>
+       <p className="site-title" onClick={OnClickHandler}>
+       <Link to="Home">ZAYNAB <span>ABD AL NABI</span></Link>
       </p>
 
       <button
