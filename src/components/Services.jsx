@@ -8,78 +8,73 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 
+
+
 const Services = () => {
-  const API_URL = process.env.REACT_APP_API_URL;
-  const [serviceDescription, setserviceDescription] = useState();
-
-  const fetchServiceInformation = async () => {
-    await axios
-      .get(`${API_URL}/infos/getAllInformation`)
-      .then((response) => setserviceDescription(response.data.data));
-    console.log('services', serviceDescription);
-  };
-
-  useEffect(() => {
-    fetchServiceInformation();
-  },[]);
-
-  const designData =
-    serviceDescription &&
-    serviceDescription.find((data) => data.title === 'Design')
-      ? serviceDescription.find((data) => data.title === 'Design')
-      : null;
-
-  const developmentData =
-    serviceDescription &&
-    serviceDescription.find((data) => data.title === 'Development')
-      ? serviceDescription.find((data) => data.title === 'Development')
-      : null;
-
-  const maintenanceData =
-    serviceDescription &&
-    serviceDescription.find((data) => data.title === 'Maintenance')
-      ? serviceDescription.find((data) => data.title === 'Maintenance')
-      : null;
+ const API_URL = process.env.REACT_APP_API_URL;
+ const [serviceDescription, setServiceDescription] = useState();
 
 
-  return (
-    <div className="services-container" id="services">
-      <div className="myServices">My Services</div>
+ const fetchServiceInformation = async () => {
+   await axios
+     .get(`${API_URL}/infos/getAllInformation`)
+     .then((response) => setServiceDescription(response.data.data.filter(response => response.type === 'services')));
+ };
 
-      <div className="services">
-        <div className="design">
-          <div className="service-icon">
-            {/* <img className="designimage"src={Design} alt="design icon" /> */}
-            <MdDesignServices />
-          </div>
-          <div className="service-name">{designData?.title}</div>
-          <div className="service-description">
-            {designData?.fullDescription}
-          </div>
-        </div>
-        <div className="development">
-          <div className="service-icon">
-            {/* <img className="developmentimage" src={Development} alt="development" /> */}
-            <FaWrench />
-          </div>
-          <div className="service-name">{developmentData?.title}</div>
-          <div className="service-description">
-           {developmentData?.fullDescription}
-          </div>
-        </div>
-        <div className="maintenance">
-          <div className="service-icon">
-            {/* <img className="maintenance-img" src={Maintenance} alt="Maintenance" /> */}
-            <AiOutlineLaptop />
-          </div>
-          <div className="service-name">{maintenanceData?.title}</div>
-          <div className="service-description">
-           {maintenanceData?.fullDescription}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+
+ useEffect(() => {
+   fetchServiceInformation();
+ },[]);
+
+
+
+
+
+
+
+
+
+
+ return (
+   <div className="services-container" id="services">
+
+
+     <div className="myServices">My Services</div>
+
+
+
+
+     <div className="services">
+     {serviceDescription && serviceDescription.map((service,key)=>{
+     return(
+  
+
+
+
+
+       <div className="design">
+         <div className="service-icon">
+          
+          {key==0 ? <MdDesignServices /> : key==1 ?<FaWrench/> : <AiOutlineLaptop/>}
+         </div>
+
+
+         <div className="service-name">{service.title}</div>
+         <div className="service-description">
+          {service.fullDescription}
+         </div>
+       </div>
+     
+      )
+     })
+   }
+     </div>
+   </div>
+ );
 };
 
+
 export default Services;
+
+
+
