@@ -21,25 +21,28 @@ const ContactMe = () => {
     }
 
     return (
-        <>
-            <div className="contact-me">
-                <div class="left">
+        <div id="contacts">
+            <div  className="contact-me">
+                <div class="contact-left">
                     <div className="contact-name">Zaynab Abd El<br /> Nabi</div>
-                    <div className="social-icon">
+                    <div className="contact-social-icon">
                         <div className="facebook-icon">
-                            <FontAwesomeIcon icon={faFacebook} color='grey' />
+                        <a href="https://www.facebook.com/zaynab.abdelnabi" target="_blank">
+                            <FontAwesomeIcon icon={faFacebook} color='grey' /></a>
                         </div>
                         <div class="LinkedIn-icon">
-                            <FontAwesomeIcon icon={faLinkedinIn} color='grey' />
+                        <a href="https://www.linkedin.com/in/zaynababdelnabi" target="_blank">
+                            <FontAwesomeIcon icon={faLinkedinIn} color='grey' /></a>
                         </div>
                         <div class="twitter-icon">
                             <FontAwesomeIcon icon={faTwitter} color='grey' />
                         </div>
                         <div class="instagram-icon">
-                            <FontAwesomeIcon icon={faInstagram} color='grey' />
+                        <a href="https://www.instagram.com/zaynab.abdelnabi/?igshid=YmMyMTA2M2Y=" target="_blank"> 
+                            <FontAwesomeIcon icon={faInstagram} color='grey' /></a>
                         </div>
                     </div>
-                    <div className="left-buttom">
+                    <div className="contact-left-buttom">
                         <div className="personal-contact">
                             <div className="personal-contact">My personal contact </div>
                             <div className="phone-number">+961 81 286 345</div>
@@ -57,7 +60,7 @@ const ContactMe = () => {
                 <div className="right-container">
                     <div className="midlle-content">Contact<br />me</div>
 
-                    <form class="right" id="myForm" onSubmit={sendEmail}>
+                    <form class="contact-right" id="myForm" onSubmit={sendEmail}>
                         <input type="text" id="name-question" name="name" placeholder="What is your name ?" />
                         <input type="email" id="email-question" name="email" placeholder="What is your Email ?" />
                         <textarea type="text" id="writing-message" name="message" placeholder="Write a message" />
@@ -66,6 +69,7 @@ const ContactMe = () => {
 
                 </div>
             </div>
+            
             <div className="query-style">
 
                 <div className="title-query"> GET IN TOUCH</div>
@@ -74,7 +78,7 @@ const ContactMe = () => {
                     <form className="form-query">
 
                         <div className="email-query">
-                            <label for="email">Your Email Address</label>
+                           <div><label for="email">Your Email Address</label></div> 
                             <input type="email" id="email-question-query" name="text" placeholder="something@website.com" />
                         </div>
 
@@ -85,7 +89,8 @@ const ContactMe = () => {
                         </div>
 
                         <div className="message-query">
-                            <textarea type="text" id="writing-message" name="text" placeholder="Your message starts with..." />
+                            <label for="text">Message</label>
+                            <textarea type="text" id="query-writing-message" name="text" placeholder="Your message starts with..." />
                         </div>
 
                         <div className="btn-query">
@@ -98,7 +103,7 @@ const ContactMe = () => {
 
             </div>
 
-        </>
+        </div>
     )
 
 }

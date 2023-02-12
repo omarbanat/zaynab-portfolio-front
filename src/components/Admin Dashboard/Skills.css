@@ -1,0 +1,19 @@
+.admin-skills {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20em;
+}
+
+.admin-skills h1 {
+  color: #8a5284;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.admin-skills__list {
+  display: flex;
+  flex-direction: column;
+}

@@ -18,12 +18,11 @@ const Experiences = () => {
   }, []);
 
   return (
-    <div className="experience-section">
-      <h1>Experiences</h1>
+    <div className="experience-section" id="experience">
+      <h1>Experience</h1>
       <div className="experience-container">
         {experiences.map((experience) => (
           <ExperienceSection
-            omar={experience['_id']}
             key={experience['_id']}
             right={experience.sort % 2}
             data={experience}

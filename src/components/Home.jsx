@@ -5,62 +5,90 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 
+
+
+
+const API_URL = process.env.REACT_APP_API_URL;
+
+
 const Home = () => {
-  const API_URL = process.env.REACT_APP_API_URL;
-  const [description, setDescription] = useState();
-
-  const fetchInformation = async () => {
-    await axios
-      .get(`${API_URL}/infos/getAllInformation`)
-      .then((response) => setDescription(response.data.data));
-    console.log('product', description);
+ const [description, setDescription] = useState([]);
 
 
-  };
+ const fetchInformation = async () => {
+   await axios
+     .get(`${API_URL}/infos/getAllInformation`)
+     .then((response) => setDescription(response.data.data));
+   console.log('home', description);
+ };
 
-  useEffect(() => {
-    fetchInformation();
-  });
 
-  const homeData =
-    description && description.find((data)=>data.type==='home')? description.find((data)=>data.type==='home'):null;
+const fileDownload = require('js-file-download')
+ const download = (e) => {
+   e.preventDefault();
+   axios({
+     baseURL: `${API_URL}/download`,
+     method: 'Get',
+     responseType: 'blob',
+   }).then((res) => {
+     fileDownload(res.data, 'ZaynabAbdElNabi.pdf');
+   });
+ };
 
-    console.log(homeData)
 
-  return (
-    <div>
-      <div className="home">
-        <div className="home-description">
-          <div className="home-hello">
-            <p>Hello,</p>
-          </div>
-          <div className="home-title">
-            <div className="state">
-              <p>I'm</p>
-            </div>
-            <div className="home-name">
-              <p>Zaynab Abd El NABI</p>
-            </div>
-          </div>
-          <div className="parag">
-            <p>{homeData?.fullDescription}</p>
-          </div>
-          <div>
-            <button className="btn1">Download CV</button>
-          </div>
-        </div>
+ useEffect(() => {
+   fetchInformation();
+ },[]);
 
-        <div>
-          <img
-            className="home-profileimage"
-            src={Profile}
-            alt="Zaynab's Profile"
-          />
-        </div>
-        <div className="triangle"></div>
-      </div>
-    </div>
-  );
+
+ const homeData =
+   description && description.find((data) => data.type === 'home')
+     ? description.find((data) => data.type === 'home')
+     : null;
+
+
+ console.log(homeData);
+
+
+ return (
+   <div>
+     <div className="home">
+       <div className="home-description">
+         <div className="home-hello">
+           <p>Hello,</p>
+         </div>
+         <div className="home-title">
+           <div className="state">
+             <p>I'm</p>
+           </div>
+           <div className="home-name">
+             <p>Zaynab Abd El NABI</p>
+           </div>
+         </div>
+         <div className="parag">
+           <p>{homeData?.fullDescription}</p>
+         </div>
+         <div>
+           <button className="btn1"  onClick={(e) => download(e)}>Download CV</button>
+         </div>
+       </div>
+
+
+       <div>
+         <img
+           className="home-profileimage"
+           src={Profile}
+           alt="Zaynab's Profile"
+         />
+       </div>
+       <div className="triangle"></div>
+     </div>
+   </div>
+ );
 };
 
+
 export default Home;
+
+
+

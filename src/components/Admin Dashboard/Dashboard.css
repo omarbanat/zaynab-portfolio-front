@@ -1,0 +1,115 @@
+.dashboard {
+  display: flex;
+  width: 100vw;
+  height: 99vh;
+}
+
+.dashboard-sidenavbar {
+  position: fixed;
+  margin-right: 1em;
+  background-color: #8a5284;
+  display: flex;
+  flex-direction: column;
+  width: 17vw;
+  height: 100vh;
+  min-width: 190px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 90%;
+  border-radius: 50%;
+  margin-top: 1em;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.image-container p {
+  position: absolute;
+  text-align: center;
+  /* left: 44%; */
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.dashboard-sidenavbar h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.dashboard-sidenavbar ul {
+  list-style-type: none;
+}
+
+.dashboard-sidenavbar__list {
+  width: 17vw;
+}
+
+.dashboard-sidenavbar__list a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding: 0.15em;
+  margin: 0.4em 0;
+}
+
+.dashboard-sidenavbar__list a:hover,
+.dashboard-sidenavbar__list a:active {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.logout-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 0.25em 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.admin-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-admin {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-weight: 700;
+  background-color: white;
+  border: none;
+  color: #8a5284;
+  border-radius: 1em;
+  font-size: 0.7em;
+}
+
+.btn-primary {
+  background-color: #8a5284;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .dashboard-sidenavbar {
+    display: none;
+  }
+
+  .admin-btns {
+    justify-content: center;
+  }
+}

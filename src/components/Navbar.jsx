@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-      <p className="site-title" onClick={OnClickHandler}>
-        ZAYNAB <span>ABD AL NABI</span>
+       <p className="site-title" onClick={OnClickHandler}>
+       <Link to="Home">ZAYNAB <span>ABD AL NABI</span></Link>
       </p>
 
       <button
@@ -36,9 +36,8 @@ const Navbar = () => {
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
       >
-        <ul>
-          <li div="about">
-            <Link
+        <ul >
+        <Link
               to="about"
               spy={true}
               smooth={true}
@@ -46,11 +45,14 @@ const Navbar = () => {
               duration={900}
               onClick={closeMenu}
             >
+          <li div="about"   onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}>
+           
               About
-            </Link>
-          </li>
-          <li>
-            <Link
+          
+          </li>  </Link>
+          <Link
               to="services"
               spy={true}
               smooth={true}
@@ -58,57 +60,70 @@ const Navbar = () => {
               duration={900}
               onClick={closeMenu}
             >
+          <li   onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}>
+           
             Services
-            </Link>
+           
           </li>
-          <li div="experience">
-            <Link
-              to="/experience"
+          </Link>
+          <Link
+              to="experience"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-10}
+              duration={1500}
               onClick={closeMenu}
             >
+          <li div="experience">
+           
               Experience
-            </Link>
+           
           </li>
-          <li div="projects">
-            <Link
+          </Link>
+          <Link
               to="projects"
               spy={true}
               smooth={true}
               offset={50}
-              duration={500}
+              duration={1500}
               onClick={closeMenu}
             >
+          <li div="projects">
+            
               Projects
-            </Link>
+           
           </li>
-          <li div="blogs">
-            <Link
+          </Link>
+          <Link
               to="blogs"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-50}
+              duration={1500}
               onClick={closeMenu}
             >
-              BLogs
-            </Link>
+          <li div="blogs">
+         
+              Blogs
+           
           </li>
-          <li div="contacts">
-            <Link
+          </Link>
+          <Link
               to="contacts"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-50}
+              duration={1500}
               onClick={closeMenu}
             >
+          <li div="contacts">
+          
               Contacts
-            </Link>
+           
           </li>
+          </Link>
         </ul>
       </div>
       <div className="socailfollow">
