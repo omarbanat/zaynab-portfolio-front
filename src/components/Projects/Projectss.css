@@ -257,9 +257,9 @@
       margin: auto;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: space-around;
-      height: 2800px;
+      height: 105rem;
       width: 80%;
       background-color: white;
       align-self: center;
