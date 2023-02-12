@@ -1,0 +1,36 @@
+.BlogstitleL{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    background-color: #8A5284;
+    color: white;
+    margin-bottom: 200px;
+  
+}
+.BLGtlt{
+    width: 80%;
+    margin-left: 20px;
+
+}
+
+#allProjectsPage{
+    margin-bottom: 200px ;
+}
+.homebtnBLG{
+  width: 20%;
+  background-color: #8A5284 ; 
+  color: white;
+ 
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  opacity: 0.9;
+  display: flex;
+  justify-self: flex-end;
+
+}
